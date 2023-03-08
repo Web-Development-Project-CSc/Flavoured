@@ -10,18 +10,21 @@ form {
 }
 
 .flavoured {
-    margin-left: 20px;
+    margin-left: 35px;
     text-align: left;
 }
 
-input {
+input,
+select,
+option {
+    margin-bottom: 5px;
     text-align: center;
     border-radius: 15px;
 }
 
 img {
-    margin-left: 61%;
-    width: 175px;
+    margin-left: 53%;
+    width: 180px;
     margin-bottom: 0%;
 }
 
@@ -31,19 +34,41 @@ img {
     font-family: 'Times New Roman';
 }
 
+option {
+    opacity: 80%;
+    color: #A84448;
+    font-family: 'Times New Roman';
+}
+
+select {
+    width: 170px;
+    opacity: 95%;
+    color: #A84448;
+    font-family: 'Times New Roman';
+}
+
+.date {
+    width: 165px;
+    opacity: 95%;
+    color: #A84448;
+    font-family: 'Times New Roman';
+}
+
+
 header {
     margin-right: 15%;
     display: inline-block;
     position: fixed;
     text-shadow: 3px 3px#A84448;
     text-align: left;
-    font-size: 50px;
+    font-size: 60px;
     margin-bottom: 0px;
     padding: 0%;
 }
 
 label {
     text-align: right;
+    font-size: 25PX;
 }
 
 .data {
@@ -58,23 +83,28 @@ label {
     margin-bottom: 10px;
 }
 
-.email {
-    margin-right: 57px;
+.name {
+    margin-right: 120px;
 }
 
 .password {
-    margin-right: 13px;
+    margin-right: 91px;
 }
 
-button {
-    width: 168px;
-    font-size: 20px;
-    font-family: 'Times New Roman';
-    background-color: #A84448;
-    color: white;
-    border-color: #f9f1db;
-    margin-bottom: 8px;
-    border-radius: 20px;
+.country {
+    margin-right: 100px;
+}
+
+.address {
+    margin-right: 100px;
+}
+
+.birthdate {
+    margin-right: 90px;
+}
+
+.mobile{
+    margin-right: 110px;
 }
 
 .signUp {
@@ -84,26 +114,38 @@ button {
     margin-bottom: 0px;
 }
 
+
+
+button {
+    width: 186px;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    background-color: #A84448;
+    color: white;
+    border-color: #f9f1db;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
 body {
     background-color: #f9f1db;
     color: white;
     font-family: 'Times New Roman';
 }
 
+p {
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
 a {
+    font-size: 16px;
     display: inline-block;
     text-decoration: underline;
     color: #99B19C;
-    margin: 10px;
-}
-
-p {
-    display: inline-block;
-}
-
-.tb {
-    font-size: 15px;
-    display: inline-block;
 }
 
 a:hover {
