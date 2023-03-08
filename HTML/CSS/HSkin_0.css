@@ -11,8 +11,7 @@ header {
     top:0;
     height: 110px;
     margin: 0%;
-    padding-top: 1%;
-    display: block;
+    padding: 5px;
 }
 .logo{
     width: 200px;
@@ -26,5 +25,42 @@ header {
     margin: 2%;
 }
 .profileMenu {
-    display: none;
+   display: none;
+   background-color:#f9f1db;
+   float: right;
+   margin: 2%;
+   border-color: #A84448;
+   border-style:solid;
+   border-width: 10px;
+   font-size: 30px;
+   color:#A84448;
+   width:200px;
+   height: 165px;
+   color:white;
+   background-color: #A84448;
+   border-radius: 20px;
+  }
+  .profileHeader{
+    padding:10px;
+  }
+  .profileMenu a{
+    border-style:solid ;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: #A84448;
+    padding:10px;
+    display: block;
+    text-decoration: none;
+    color:white;
+  }
+  .menuOn{
+    float: right;
+    margin: 2%;
+  }
+  .profileMenu a:hover{
+      color: white;
+      background-color: #99B19C;
+  }
+  .menuOn:hover .profileMenu{
+    display: block;
   }
