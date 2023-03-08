@@ -10,7 +10,7 @@ form {
 }
 
 .flavoured {
-    margin-left: 10px;
+    margin-left: 40px;
     text-align: left;
     margin-bottom: 20px;
 }
@@ -23,6 +23,7 @@ input {
 img {
     margin-left: 60%;
     width: 150px;
+    margin-bottom: 0%;
 }
 
 ::placeholder {
