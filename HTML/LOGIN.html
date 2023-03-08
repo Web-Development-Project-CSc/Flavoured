@@ -11,15 +11,24 @@
 
 <body>
     <form action="#" method="get">
-        <div class="container">
-            <label>Email : </label>
-            <input type="text" placeholder="Enter your email" name="email" required>
-            <label>Password : </label>
-            <input type="password" placeholder="Enter Password" name="password" required>
-            <button type="submit">Login</button>
-            <input type="checkbox" checked="checked"> Remember me
-            <button type="button" class="cancelbtn"> Cancel</button>
-            <a href="#">Forgot password? </a>
+        <header>Login Form</header>
+        <div class="data">
+            <label class="email">Email : </label>
+            <input class="tb" type="text" placeholder="Enter Your Email" name="email" required>
+        </div>
+        <div class="data">
+            <label class="password">Password : </label>
+            <input class="tb" type="password" placeholder="Enter Your Password" name="password" required>
+        </div>
+        <button type="submit">Login</button>
+        <button type="button" class="cancelbtn"> Cancel</button>
+        <div class="signUp">
+            <a href="#">Forgot password?</a>
+            <input class="ck" type="checkbox" checked="checked"> Remember me
+        </div>
+        <div class="signUp">
+            <p>not a member?</p>
+            <a href="#">sign up now?</a>
         </div>
     </form>
 </body>

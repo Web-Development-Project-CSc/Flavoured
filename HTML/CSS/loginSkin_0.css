@@ -1,10 +1,93 @@
 form {
-    padding: 10PX;
-    text-align: center;
-    display: inline-block;
     background-color: #713c5f;
-    margin-left: 530px;
-    margin-top: 70px;
-    height: 450px;
-    width: 300px;
+    margin: auto;
+    padding: 20PX;
+    text-align: center;
+    width: 30%;
+    height: 40%;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+input {
+    
+    text-align: center;
+    border-radius: 15px;
+}
+
+::placeholder {
+    opacity: 80%;
+    color: #A84448;
+    font-family: 'Times New Roman';
+}
+
+header {
+    text-shadow: 3px 3px#A84448;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 15px;
+    padding: 0%;
+
+}
+
+label {
+    text-align: right;
+}
+
+.data {
+    display: block;
+    padding: 5px;
+
+}
+
+.email {
+    margin-right: 57px;
+}
+
+.password {
+    margin-right: 13px;
+}
+
+button {
+    width: 168px;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    background-color: #A84448;
+    color: white;
+    border-color: #f9f1db;
+    margin-bottom: 8px;
+    border-radius: 20px;
+}
+
+.signUp {
+    font-size: 14px;
+    display: block;
+    text-align: center;
+}
+
+body {
+    background-color: #f9f1db;
+    color: white;
+    font-family: 'Times New Roman';
+}
+
+a {
+    display: inline-block;
+    text-decoration: underline;
+    color: #99B19C;
+    margin: 10px;
+}
+
+p {
+    display: inline-block;
+}
+
+.tb {
+    font-size: 15px;
+    display: inline-block;
+}
+
+a:hover {
+    background-color: #99B19C;
+    color: white;
 }
