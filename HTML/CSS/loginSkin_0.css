@@ -1,7 +1,7 @@
 form {
     background-color: #713c5f;
     margin: auto;
-    padding: 20PX;
+    padding: 25PX;
     text-align: center;
     width: 30%;
     height: 40%;
@@ -9,16 +9,20 @@ form {
     border-radius: 20px;
 }
 
-input {
+.flavoured {
+    margin-left: 40px;
+    text-align: left;
+}
 
+input {
     text-align: center;
     border-radius: 15px;
 }
 
 img {
-
-    display: block;
-    width: 100px;
+    margin-left: 60%;
+    width: 150px;
+    margin-bottom: 0%;
 }
 
 ::placeholder {
@@ -28,10 +32,13 @@ img {
 }
 
 header {
+    margin-right: 15%;
+    display: inline-block;
+    position: fixed;
     text-shadow: 3px 3px#A84448;
-    text-align: center;
+    text-align: left;
     font-size: 45px;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     padding: 0%;
 
 }
@@ -44,6 +51,12 @@ label {
     display: block;
     padding: 5px;
 
+}
+
+.data2 {
+    display: block;
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
 .email {
@@ -69,6 +82,7 @@ button {
     font-size: 14px;
     display: block;
     text-align: center;
+    margin-bottom: 0px;
 }
 
 body {
