@@ -1,0 +1,30 @@
+body {
+    background-color: #f9f1db;
+    color: white;
+    font-family: 'Times New Roman';
+    font-size: 30px;
+    padding: 0%;
+  }
+header {
+    background-color: #713c5f;
+    width: 100%;
+    top:0;
+    height: 110px;
+    margin: 0%;
+    padding-top: 1%;
+    display: block;
+}
+.logo{
+    width: 200px;
+    display: inline-block;
+    margin-left: 45%;
+    margin-right: auto;
+}
+.profileIcon{
+    height:50px;
+    float: right;
+    margin: 2%;
+}
+.profileMenu {
+    display: none;
+  }
