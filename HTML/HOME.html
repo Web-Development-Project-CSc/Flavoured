@@ -19,33 +19,44 @@
             </div>
         </div>
     </header>
-    <nav>
+    <nav id="navbar" >
 <a href="#">HOME</a><a href="#">STORE</a><a href="#">HELP</a>
-    </nav>
+    </nav>+
     <script type="text/javascript" src="JS/navbar.js"></script>
-<section class="info">
+<section class="info scrollfade --animate --hidden">
     <div class="changingImage">
-        <img src="" alt="p1">
-        <img src="" alt="p2">
-        <img src="" alt="p3">
+        <img class="mySlides fade" src="RESOURCE/testing.png" alt="p1">
+        <img class="mySlides fade" src="RESOURCE/delivery.png" alt="p3">
+        <img class="mySlides fade" src="RESOURCE/product.jpg" alt="p2">
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+<span class="dot" onclick="currentSlide(1)"></span> 
+<span class="dot" onclick="currentSlide(2)"></span> 
+<span class="dot" onclick="currentSlide(3)"></span> 
     </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-        eius molestiae perferendis eos provident vitae iste.</p>
+    <script type="text/javascript" src="JS/slideshow.js"></script>
+    <p> Flavoured is multi-owned company that has been in the works for years. 
+        We work exclusively with the highest ranking food scientists that are always in the lab, testing and targetting new flavours to bring to your door.
+        Alongside our original and generic options, Flavoured tries to partner with all your favorite brands to make all your favorite snacks and meals all the more accessible, customizable and enjoyable.
+        All our deliveries are done carefully by our shipping team to ensure you a comforting experience throughout.
+        We at Flavoured understand that people eat with their eyes as well which is why we try to provide you with your choice of colorings to make all your meals TASTE and LOOK like your favorites.
+        We offer all our products in two forms to fit your demand.</p>
 </section>
+<script type="text/javascript" src="JS/scrollfade.js"></script>
 <section class="items">
     <div class="itemsHeader">Best Sellers</div>
     <div class="product">
-        <img src="" alt="pr1">
+        <img src="RESOURCE/mock.png" alt="pr1">
         <details>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
             eius molestiae perferendis eos provident vitae iste.</details>
     </div>
     <div class="product">
-        <img src="" alt="pr1">
+        <img src="RESOURCE/mock.png" alt="pr1">
         <details>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
             eius molestiae perferendis eos provident vitae iste.</details>
     </div>
     <div class="product">
-        <img src="" alt="pr1">
+        <img src="RESOURCE/mock.png" alt="pr1">
         <details>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
             eius molestiae perferendis eos provident vitae iste.</details>
     </div>
