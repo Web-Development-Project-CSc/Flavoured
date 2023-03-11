@@ -55,7 +55,7 @@ select {
     font-family: 'Times New Roman';
 }
 
-.date {
+#bdate{
     width: 165px;
     opacity: 95%;
     color: #A84448;
