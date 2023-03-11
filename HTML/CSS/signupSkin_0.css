@@ -122,14 +122,14 @@ button {
     font-family: 'Times New Roman';
     background-color: #A84448;
     color: white;
-    border-color: #f9f1db;
+    border-color: #f5f0e3;
     margin-bottom: 8px;
     margin-top: 15px;
     border-radius: 20px;
 }
 
 body {
-    background-color: #f9f1db;
+    background-color: #f5f0e3;
     color: white;
     font-family: 'Times New Roman';
 }
