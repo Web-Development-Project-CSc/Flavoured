@@ -1,4 +1,3 @@
-  
     function confirmpass(){
         let p=document.getElementById("pword").value;
         let pc=document.getElementById("cpword").value;
