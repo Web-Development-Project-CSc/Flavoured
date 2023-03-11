@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <form action="#" style="border:1px solid #ccc">
+  <form action="/action_page.php" style="border:1px solid #ccc">
     <div class="flavoured">
       <header>Sign Up</header>
       <img src="RESOURCE/Flavoured_with_slogan-transformedd.png" alt="logo">
@@ -38,7 +38,7 @@
     </div>
     <div>
       <label class="birthdate" for="birthdate">Birthdate :</label>
-      <input class="date" type="date" name="birthdate" required>
+      <input class="date" type="date" name="birthdate" required onchange=validateAge()>
     </div>
     <div>
       <label class="mobile" for="mobile">Mobile :</label>
@@ -60,7 +60,19 @@
       <input type="checkbox" checked="checked" name="Terms & Privacy" required>
       <p>By creating an account you agree to our</p> <a href="#">Terms & Privacy.</a>
     </div>
-
+    <!-- <script src="verification.js"></script> -->
+    <script> 
+    function validateAge() {
+      let today = new Date();
+      let birthdate=new Date();
+      birthdate = document.getElementsByClassName("date");
+      let age = today.getFullYear() - birthdate;
+      if (age < 16) {
+          alert("You must be at least 16 years old to use this service.");
+      }
+  }
+  validateAge();
+  </script>
   </form>
   <script src="JS/verification.js"></script>
 </body>
