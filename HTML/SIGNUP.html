@@ -60,19 +60,6 @@
       <input type="checkbox" checked="checked" name="Terms & Privacy" required>
       <p>By creating an account you agree to our</p> <a href="#">Terms & Privacy.</a>
     </div>
-    <!-- <script src="verification.js"></script> -->
-    <script> 
-    function validateAge() {
-      let today = new Date();
-      let birthdate=new Date();
-      birthdate = document.getElementsByClassName("date");
-      let age = today.getFullYear() - birthdate;
-      if (age < 16) {
-          alert("You must be at least 16 years old to use this service.");
-      }
-  }
-  validateAge();
-  </script>
   </form>
   <script src="JS/verification.js"></script>
 </body>
