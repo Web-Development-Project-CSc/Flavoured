@@ -1,8 +1,11 @@
+html{
+  max-width: 100%;
+}
 body {
     background-color: #f5f0e3;
     color: white;
     font-family: 'Times New Roman';
-    font-size: 30px;
+    font-size: 20px;
    margin:0;
    left:0; right: 0;
    width: 100%;
@@ -11,36 +14,50 @@ header {
     background-color: #713c5f;
     width: 100%;
     top:0;
-    height: 110px;
+    height: 60px;
     margin: 0%;
     padding: 5px;
     right:0;
-    left:0;
-}
+    left:0;}
 .logo{
-    width: 200px;
+    width: 100px;
     display: inline-block;
-    margin-left: 45%;
+    margin-left: 47%;
     margin-right: auto;
 }
 .profileIcon{
-    height:50px;
+    height:30px;
     float: right;
+    top:0;
     margin: 2%;
+}
+.bigIcon img{
+  width:40%;
+  margin-left: 29%;
+  margin-bottom: 8%;
+  margin-top: 7%;
+}
+.bigIcon{
+  background-color: rgba(182, 179, 179, 0.7);
+  width:90%;
+  margin:6%;
+  margin-top: 2%;
+  border-radius: 20px;
 }
 .profileMenu {
    display: none;
    background-color:#f9f1db;
    float: right;
-   margin: 2%;
+   margin: 1%;
    border-color: #A84448;
    border-style:solid;
    border-width: 10px;
-   font-size: 30px;
-   width:200px;
-   height: 165px;
+   width:150px;
+   height: 123px;
    background-color: #A84448;
    border-radius: 20px;
+   position: fixed;
+   left:84%;
   }
   .profileHeader{
     padding:10px;
@@ -53,7 +70,7 @@ header {
     border-radius: 20px;
     border-width: 1px;
     border-color: #A84448;
-    padding:10px;
+    padding:7px;
     display: block;
     text-decoration: none;
     color:white;
@@ -193,10 +210,11 @@ font-style: italic;
 }
 .itemsHeader{
   margin-bottom: 2%;
-  font-size: 70px;
-  text-shadow: 1px 1px 1px #99B19C;
+  font-size: 85px;
+  text-shadow: 3px 3px 3px #757575;
   font-stretch: extra-expanded;
   display: block;
+  color:rgba(255, 255, 255, 0.873);
 }
 
 .product img{
@@ -213,6 +231,7 @@ margin:1%;
 width:30%;
 box-shadow: 1em 1em 1em rgba(0, 0, 0, .1);
 display: inline-table;
+border-radius: 10px;
 }
 
 .product summary{
@@ -271,15 +290,18 @@ footer{
   padding-left: 20px;
   font-size: 15px;
 color:#d4d4d4;
+width:98.5%
 }
 .contact{
   font-size: 12px;
 display: inline-flex;
-margin-left: auto;
+margin-left: 10%;
 margin-right: auto;
 }
 .contact img{
   width: 1.5em;
   margin-right: 0.6em;
 }
-
+.product:hover{
+  box-shadow: 0px 3px 10px rgba(69, 69, 69, 0.534);
+}
