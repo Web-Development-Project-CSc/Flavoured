@@ -88,6 +88,7 @@ header {
      padding-left: 5px;
      left:0;
      right:0;
+     z-index: 2;
  }
  nav a{
      text-decoration: none;
@@ -107,7 +108,7 @@ header {
     margin: 0;
     padding: 1%;
     margin-top: 2%;
-    position: relative;
+    /* position: relative; */
     padding-left: 20px;
     font-size: 15px;
   color:#d4d4d4;
@@ -123,5 +124,194 @@ header {
     width: 1.5em;
     margin-right: 0.6em;
   }
+  .help{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:2%;
+    margin-bottom:5%;
+
+  }
+.help img{
+  width:30px;
+  margin:0;
+  margin-left: 90%;
+}
+  .help form {
+      width: 360px;
+      background-color: #fff;
+      font: inherit;
+      box-shadow: 0 6px 10px 0 rgba(74, 74, 74, 0.382);
+      border-radius: 10px;
+      outline: 0;
+      padding: 22px 18px;
+      margin-top:20px;
+    }
+    .help button,  input[type='email'],input[type='text'],input[type='button'] {
+      display: inline-block;
+      color: inherit;
+      border: 0;
+      outline: 0;
+      padding: 0;
+      transition: all 200ms ease-in;
+      cursor: pointer;
+      box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+      border-radius: 2px;
+      padding: 12px 36px;
+      margin-top:20px;
+    }
+    .help button:hover, .FAQBox ,input[type='button']:hover , input[type='color']:hover, input[type='radio']:hover{
+      box-shadow: 0px 3px 10px rgba(69, 69, 69, 0.655);
+        } 
+        .help button:active, .FAQBox:hover,input[type='button']:active, input[type='color']:active, input[type='radio']:active{
+          box-shadow:  0 0 8px 2px rgba(0, 0, 0, 0.525);
+        }
+      .help label{
+        color:black;
+      }
+      .help button,input[type='button']{
+        background-color: #A84448;
+        border-radius: 2px;
+        font-family: inherit;
+      }
+      input[type="email"]:focus {
+        box-shadow: 0px 3px 10px rgba(69, 69, 69, 0.534);
+      }
+      .request input[type="email"]:focus,input[type='text']:focus,input[type='color']:focus{
+        box-shadow: 0px 3px 10px rgba(25, 25, 25, 0.841);
+      }
+      .FAQ{
+        margin:4%;
+        margin-left:auto;
+        margin-right:auto;
+        width:65%;
+        display: block;
+        text-align: left;
+      }
+      .FAQBox img{
+        width:70px;
+        float:right;
+        margin:1%;
+      }
+.FAQBox{
+background-color:rgb(91, 104, 95);
+margin:5%;
+} 
+input[type='color']{
+  border:0;
+background-color: rgba(255, 255, 255, 0.882);
+  padding: 5px;
+  border-radius: 2px;
+  margin-right:0.3em;
+  cursor:zoom-in;
+  height: 3.1em;
+  width:5em;
+  vertical-align: middle;
+}
+
+.bar{
+  height:90px;
+  width:100%;
+  padding: 2%;
+}
+summary{
+  outline: none;
+  list-style: none;
+  width:100%;
+  height: 100%;
+  cursor: pointer;
+  padding:2%;
+}
+details[open] .return , details[open] .shipping{
+  background-color: #dfd2c2;
+  padding: 5px;
+  padding-left: 4%;
+  padding-right:4%;
+}
+.request{
+  padding:15px;
+  padding-top: 0px;
+}
+.type label{
+  display: inline-block;
+  margin: 5%;
+  cursor: pointer; 
+  text-shadow: .5em .5em .5em rgba(0, 0, 0, .1);
+
+}
+.type img{
+  float: none;
+  display: inline-block;
+}
+.profilebar{
+text-align: right;
+width:100%;
+margin-bottom: 1%;
+margin-left: auto;
+margin-right: auto;
+}
+.profilebar label{
+  margin:0.7em;
+}
+.profilebar input{
+  width:50%;
+  margin-right: 1em;
+}
+.bar input[type='text']{
+  width:65%;
+}
+  .type{
+    width:29%;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  .--hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
   
+  .--visible {
+    opacity: 1;
+    pointer-events: all;
+  }
   
+  .--animate {
+    transition: opacity 0.4s ease-in-out;
+  }.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  .info{
+    margin-left:28%;
+    margin-right:28%;
+    text-align: left;
+    display: inline-block;
+    font-style: italic; 
+    width:45%;
+    background-color: #fec007;
+    height:500px;
+    z-index: 0;
+  }
+
+  .infoHeader{
+    font-size: 2em;
+    padding: 0%;
+    position: absolute;
+    left:36%;
+    bottom:0%;
+  }
+  .info h1{
+    text-align: left;
+    margin: 0%;
+    padding: 0%;
+  }@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  .paragraph p{
+    margin: 6%;
+  }
+ .paragraph{
+  display: none;
+ }
