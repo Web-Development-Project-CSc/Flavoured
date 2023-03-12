@@ -306,3 +306,8 @@ margin-right: auto;
 .product:hover{
   box-shadow: 0px 3px 10px rgba(69, 69, 69, 0.534);
 }
+#paymentCard{
+  width:90px;
+  float: right;
+  margin:2%;
+}
