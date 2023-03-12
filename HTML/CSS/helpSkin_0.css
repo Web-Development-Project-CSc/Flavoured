@@ -137,9 +137,13 @@ header {
   width:30px;
   margin:0;
   margin-left: 90%;
+  display: block;
+}
+.help label{
+  display: block;
 }
   .help form {
-      width: 360px;
+      width: 750px;
       background-color: #fff;
       font: inherit;
       box-shadow: 0 6px 10px 0 rgba(74, 74, 74, 0.382);
@@ -161,14 +165,25 @@ header {
       padding: 12px 36px;
       margin-top:20px;
     }
-    .help button:hover, .FAQBox ,input[type='button']:hover , input[type='color']:hover, input[type='radio']:hover{
+   
+    .help button:hover, .FAQBox ,input:hover{
       box-shadow: 0px 3px 10px rgba(69, 69, 69, 0.655);
         } 
+        input{
+          font-style: italic;
+        }
         .help button:active, .FAQBox:hover,input[type='button']:active, input[type='color']:active, input[type='radio']:active{
           box-shadow:  0 0 8px 2px rgba(0, 0, 0, 0.525);
         }
+        #info:hover{
+          box-shadow:  0 0 8px 2px rgba(80, 80, 80, 0.525);
+
+        }
       .help label{
         color:black;
+      }
+      .help  input[type='text']{
+        width:300px
       }
       .help button,input[type='button']{
         background-color: #A84448;
@@ -282,7 +297,7 @@ margin-right: auto;
     animation-name: fade;
     animation-duration: 1.5s;
   }
-  .info{
+  #info{
     margin-left:28%;
     margin-right:28%;
     text-align: left;
@@ -292,6 +307,8 @@ margin-right: auto;
     background-color: #fec007;
     height:500px;
     z-index: 0;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px 0 rgba(74, 74, 74, 0.382);
   }
 
   .infoHeader{
@@ -309,7 +326,7 @@ top:10%
     margin-left: auto;
     margin-right:auto;
   }
-  .info h1{
+  #info h1{
     text-align: left;
     margin: 0%;
     padding: 0%;
