@@ -20,7 +20,7 @@ header {
     right:0;
     left:0;}
 .logo{
-    width: 100px;
+    width: 110px;
     display: inline-block;
     margin-left: 47%;
     margin-right: auto;
@@ -299,7 +299,14 @@ margin-right: auto;
     padding: 0%;
     position: absolute;
     left:36%;
-    bottom:0%;
+    bottom:10%;
+  }
+  .infoHeader img{
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    top:50%;
+    position:absolute
   }
   .info h1{
     text-align: left;
