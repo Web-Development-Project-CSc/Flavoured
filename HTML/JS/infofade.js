@@ -1,4 +1,5 @@
 let index = 0, p = document.getElementsByClassName("paragraph");
+setTimeout(infoFade,1000);
 document.getElementById("info").addEventListener(
   "mouseenter",
   (event) => {
