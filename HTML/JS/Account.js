@@ -1,5 +1,5 @@
 
-export class Account {
+class Account {
     name;
     password;
     country;
@@ -89,27 +89,27 @@ function key(value) {
     .reduce((current, previous) => previous + current)
     return sum;
 }
-export var users = [];
-export function addUser(user){
+var users = [];
+function addUser(user){
 users[key(user.email)](new Account(user));
 }
-export function removeUser(email) {
+function removeUser(email) {
     users.splice(key(email), 1);
 }
-export function getUser(email){
+function getUser(email){
     if(users[key(email)]!= undefined)
     return users[key(email)];
     else return ("{username} not found");
 }
-export function getUsers(){
+function getUsers(){
     users.fi
 }
-export function userExists(email){
+function userExists(email){
     if(users[key(email)]!=undefined)
     return true;
     else return false;
 }
-export function validateData(email,password){
+function validateData(email,password){
 if(userExists(email)){
     if(users[key(email)].password==password)
     return 1;
@@ -117,3 +117,4 @@ if(userExists(email)){
 }
 else return -1;
 }
+export {userExists, addUser,removeUser,getUser,getUsers,Account,validateData};
