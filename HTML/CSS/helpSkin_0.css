@@ -136,7 +136,7 @@ header {
 .help img{
   width:30px;
   margin:0;
-  margin-left: 90%;
+  float:right;
   display: block;
 }
 .help label{
@@ -149,8 +149,10 @@ header {
       box-shadow: 0 6px 10px 0 rgba(74, 74, 74, 0.382);
       border-radius: 10px;
       outline: 0;
-      padding: 22px 18px;
+      padding: 22px;
       margin-top:20px;
+      padding-left:60px;
+      padding-bottom:30px;
     }
     .help button,  input[type='email'],input[type='text'],input[type='button'] {
       display: inline-block;
