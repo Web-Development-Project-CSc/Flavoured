@@ -12,18 +12,21 @@
 </head>
 
 <body>
-  <form action="/action_page.php" style="border:1px solid #ccc">
+  <form action="/action_page.php" style="border:1px solid #ccc" id="myForm">
     <div class="flavoured">
       <header>Sign Up</header>
       <img src="RESOURCE/Flavoured_with_slogan-transformedd.png" alt="logo">
     </div>
     <div>
       <label class="name" for="name">Name :</label>
-      <input type="text" placeholder="Enter Your Name" name="name" required>
+      <input type="text" placeholder="Enter Your Name" name="name" id="name" required>
     </div>
     <div>
       <label class="name" for="email">Email :</label>
-      <input type="email" placeholder="Enter Your Email" name="email" required>
+      <input type="email" placeholder="Enter Your Email" name="email" id="email" required>
+    </div>
+    <div id="error" class="hide">
+      Email already exists.<button type="button" id="log">Login</button>
     </div>
     <div>
       <label class="country" for="country">Country :</label>
@@ -35,7 +38,7 @@
     </div>
     <div>
       <label class="address" for="address">Address :</label>
-      <input type="text" placeholder="Enter your address" name="address" required>
+      <input type="text" placeholder="Enter your address" name="address" id="address" required>
     </div>
     <div>
       <label class="birthdate" for="birthdate">Birthdate :</label>
@@ -43,7 +46,7 @@
     </div>
     <div>
       <label class="mobile" for="mobile">Mobile :</label>
-      <input type="tel" name="mobile" placeholder="0123456789" required>
+      <input type="tel" name="mobile" placeholder="0123456789" id="mobile" required>
     </div>
     <div>
       <label class="password" for="psw">Password :</label>
@@ -51,7 +54,7 @@
     </div>
     <div>
       <label for="psw-repeat">Confirm Password :</label>
-      <input type="password" id="cpword" placeholder="Confirm Your Password" name="confirmation" required onchange="confirmpass()"> <div id="cc" class="change c" > Passwords do not match</div>
+      <input type="password" id="cpword" placeholder="Confirm Your Password" name="confirmation" required> <div id="cc" class="change hide" > Passwords do not match</div>
     </div>
     <div class="clearfix">
       <button type="submit" class="signupbtn" >Sign Up</button>

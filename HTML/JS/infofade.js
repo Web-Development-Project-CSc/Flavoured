@@ -1,11 +1,6 @@
 let index = 0, p = document.getElementsByClassName("paragraph");
 setTimeout(infoFade,1000);
-document.getElementById("info").addEventListener(
-  "mouseenter",
-  (event) => {
-   infoFade();
-  },
-);
+document.getElementById("info").addEventListener( "mouseenter",(event) => { infoFade();});
 function infoFade(){
     let i;
     for (i = 0; i < p.length; i++) {
