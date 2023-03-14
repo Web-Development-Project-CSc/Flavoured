@@ -20,7 +20,7 @@ function validateAge()
 let b=document.getElementById("bdate").value;
 let x = new Date();
 if(new Date(b).getTime()<= x.getTime()){
-  alert("nooo");
+  x.display="block";
   return false;
 }
 return true;
