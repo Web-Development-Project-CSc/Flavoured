@@ -14,4 +14,3 @@ document.getElementById("cpword").onchange = function() {confirmPass()};
           x.classList.remove("show");
           }  
     }
-
