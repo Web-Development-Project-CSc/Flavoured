@@ -15,16 +15,7 @@ document.getElementById("bdate").onchange = function() {validateAge()};
           x.classList.remove("show");
           }  
     }
-function validateAge()
-{
-let b=document.getElementById("bdate").value;
-let x = new Date();
-if(new Date(b).getTime()<= x.getTime()){
-  x.display="block";
-  return false;
-}
-return true;
-}
+
 // document.getElementById("signupbtn").onclick= function(){
 //   let account = {
 //     name: document.getElementById("name").value,
