@@ -342,7 +342,8 @@ top:10%
   }
  .paragraph{
   display: none;
- }#paymentCard{
+ }
+ #paymentCard{
   width:90px;
   float: right;
   margin:2%;
