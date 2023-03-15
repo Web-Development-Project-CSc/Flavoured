@@ -124,3 +124,99 @@ header {
     width: 1.5em;
     margin-right: 0.6em;
   }
+  #paymentCard{
+    width:90px;
+    float: right;
+    margin:2%;
+  }
+  .itemsContainer{
+    padding: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 80%;
+    height: 70%;
+    align-items: center;
+  }
+  .storeItem{
+    display: inline-block;
+    background-color: #A84448;
+    border-radius: 20px;
+    margin: 20px;
+    width: 700px;
+    
+  }
+  .itemImg{
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    width:70%;
+    border-radius: 20px;
+  }
+  .storeItem{  
+    background-color:  rgba(205, 202, 202, 0.7);
+    padding: 2px;
+  margin:1%;
+  width:30%;
+  box-shadow: 1em 1em 1em rgba(0, 0, 0, .1);
+  display: inline-table;
+  border-radius: 10px;
+  }
+  .product summary{
+    outline: none;
+    font-size: 25px;
+    margin:5px;
+    margin-bottom: 10px;
+    list-style: none;
+  }
+  .productInfo img{
+    width:30px;
+    margin:2%;
+  }
+  .productInfo{
+    padding: 4%;
+    font-size:20px;
+    text-align: left;
+    display: block;
+    font-weight: bold;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .productInfo img{
+    width:30px;
+    margin:2%;
+  }
+  .productInfo{
+    padding: 4%;
+    font-size:20px;
+    text-align: left;
+    display: block;
+    font-weight: bold;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .flavourName{
+    margin-left: 30%;  
+  }
+  .cart{
+    background-color: #A84448;
+    margin-right: 20%;
+    margin-left: 20%;
+    border-radius: 20px;
+  }
+  .cartContainer{
+    margin-left: 30%;
+  }
+  .cartText{
+color: #d4d4d4;
+margin-left: 18%;
+font-size: 60px;
+text-decoration: underline;
+  }
+  .cartrow{
+    display: block;
+  }
+  .search{
+    margin-left: 40%;
+  }
