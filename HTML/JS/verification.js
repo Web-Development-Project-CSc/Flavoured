@@ -1,6 +1,5 @@
 
 document.getElementById("cpword").onchange = function() {confirmPass()};
-document.getElementById("bdate").onchange = function() {validateAge()};
 
     function confirmPass(){
 
