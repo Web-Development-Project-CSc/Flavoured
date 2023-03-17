@@ -15,9 +15,19 @@ function move(tag){
         hidden[2].style.display="block";
     }
 }
+let payments = document.querySelectorAll('input[name="method"]');
+payments[1].addEventListener('change', function (e) {
+    if (this.checked)
+     openDetails();
+  });
+  payments[0].addEventListener('change', function (e) {
+    if (this.checked)
+     closeDetails();
+  });
+function openDetails() {
+  document.getElementById("online").open = true;
+}
 
-// function open(){
-//     let details = document.getElementById("online");
-//    if(details.open==false)details.open= true;
-//    else details.open= false;
-// }
+function closeDetails() {
+  document.getElementById("online").open = false;
+}
