@@ -237,6 +237,7 @@ display: inline-table;
 border-radius: 10px;
 }
 .product summary{
+  cursor: pointer;
   outline: none;
   font-size: 25px;
   margin:5px;
