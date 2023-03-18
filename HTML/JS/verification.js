@@ -5,12 +5,12 @@ document.getElementById("cpword").onchange = function() {confirmPass()};
 
         let p=document.getElementById("pword").value;
         let pc=document.getElementById("cpword").value;
-        let x= document.getElementById("cc");
+        let x= document.getElementById("error");
         if(p!=pc){
           
-          x.classList.add("show");
+          x.style.display='block';
         }
           else {
-          x.classList.remove("show");
+          x.style.display='none';
           }  
     }

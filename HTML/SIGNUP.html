@@ -23,9 +23,6 @@
       <label class="name" for="email">Email :</label>
       <input type="email" placeholder="Enter Your Email" name="email" id="email" required>
     </div>
-    <div id="error"  class=" hide">
-      Email exists. <a id="log" href="LOGIN.html">Already a member</a>
-    </div>
     <div>
       <label class="country" for="country">Country :</label>
       <select id="country" name="country" class="form-control">
@@ -294,6 +291,9 @@
     <div>
       <label for="psw-repeat">Confirm Password :</label>
       <input type="password" id="cpword" placeholder="Confirm Your Password" name="confirmation" required> <div id="cc" class="change hide" > Passwords do not match</div>
+      <div id="error">
+    <span><img src="RESOURCE/required.png">Passwords do not match.</span>
+  </div>
     </div>
     <div class="clearfix">
       <button type="submit" class="signupbtn" >Sign Up</button>
