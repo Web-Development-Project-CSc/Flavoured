@@ -125,7 +125,19 @@ header {
   color:#d4d4d4;
   width:98.5%
   }
-  
+  .page{
+    cursor: pointer;
+    height: 35px;
+    width: 25px;
+    margin: 0 2px;
+    background-color:#99B19C;
+    display: inline-block;
+    font-size: 30px;
+    transition: background-color 0.6s ease;
+  }
+  .page:hover {
+    background-color: #717171;
+  }
   .items{
     width:100%;
     text-align: center;
