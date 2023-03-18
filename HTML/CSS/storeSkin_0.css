@@ -127,7 +127,6 @@ header {
   }
   
   .items{
-    margin:5%;
     width:100%;
     text-align: center;
     margin-left: auto;
@@ -180,11 +179,11 @@ header {
     opacity: 0;
     pointer-events: none;
   }
-  .searchbar{
+  .searchbar {
     background-color:#757575;
     height:125px;
-    width: 100%;
     margin: 0%;
+    width:100%;
     padding: 0%;
     padding-right: 10px;
   }
