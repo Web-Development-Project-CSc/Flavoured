@@ -19,13 +19,19 @@
     <nav id="navbar" >
 <a href="HOME.html">HOME</a><a href="STORE.html">STORE</a><a href="HELP.html">SUPPORT</a>
     </nav>
-    <div class="search">
-        <input type="text" placeholder="Search...">
-        <button type="button" class="searchbtn"></button>
-    </div>
-    <div class="itemsContainer">
-        <div class="storeItem">
-            <img src="RESOURCE/mock.png" alt="item1">
+    <section class="searchbar">
+    <div class="bar">
+        <input type="text" placeholder="i.e Flavour " required>
+    <span class="type">
+        <label><img src="RESOURCE/bottle.png" alt="liquid"><input type="radio" name="state" class="liquid" checked></label>
+        <label><img src="RESOURCE/powder.png" alt="powder"><input type="radio" name="state" class="powder"></label>
+    </span>
+    <input type="color" value="#A84448"><input type="button" value="Search">
+</div>
+</section>
+    <section class="items scrollfade --animate --hidden">
+        <div class="product scrollfade --animate --hidden">
+            <img src="RESOURCE/mock.png" alt="pr1">
             <details>
                 <summary>Flavour Name</summary><div class="productInfo">Price : 15$
                     <label><img src="RESOURCE/bottle.png" alt="liquid">Liquid <input type="radio" name="state1" class="liquid" checked></label>
@@ -33,109 +39,77 @@
                 <label class ="color">Shade : <input type="color" value="#9A6751"></label>
             </div>
             </details>
-         </div>
-    <div class="storeItem"> 
-        <img src="RESOURCE/mock.png" alt="item2">
-        <details>
-            <summary>Flavour Name</summary><div class="productInfo">Price : 15$
+        </div>
+        <div class="product scrollfade --animate --hidden">
+            <img src="RESOURCE/mock.png" alt="pr2">
+            <details><summary>Flavour Name</summary><div class="productInfo">Price : 10$
                 <label><img src="RESOURCE/bottle.png" alt="liquid">Liquid <input type="radio" name="state2" class="liquid" checked></label>
                 <label><img src="RESOURCE/powder.png" alt="powder">Powder <input type="radio" name="state2" class="powder"></label>
-            <label class ="color">Shade : <input type="color" value="#9A6751"></label>
+                <label class ="color">Shade : <input type="color" value="#9A6751"></label>
+            </div></details>
         </div>
-        </details>
-     </div>
-     <div class="storeItem"> 
-        <img src="RESOURCE/mock.png" alt="item3">
-        <details>
-            <summary>Flavour Name</summary><div class="productInfo">Price : 15$
+        <div class="product scrollfade --animate --hidden">
+            <img src="RESOURCE/mock.png" alt="pr3">
+            <details><summary>Flavour Name</summary><div class="productInfo">Price : 20$
                 <label><img src="RESOURCE/bottle.png" alt="liquid">Liquid <input type="radio" name="state3" class="liquid" checked></label>
                 <label><img src="RESOURCE/powder.png" alt="powder">Powder <input type="radio" name="state3" class="powder"></label>
-            <label class ="color">Shade : <input type="color" value="#9A6751"></label>
+                <label class ="color">Shade : <input type="color" value="#9A6751"></label>
+            </div></details>
         </div>
-        </details>
-     </div>
-     <div class="storeItem"> 
-        <img src="RESOURCE/mock.png" alt="item4">
-        <details>
-            <summary>Flavour Name</summary><div class="productInfo">Price : 15$
-                <label><img src="RESOURCE/bottle.png" alt="liquid">Liquid <input type="radio" name="state4" class="liquid" checked></label>
-                <label><img src="RESOURCE/powder.png" alt="powder">Powder <input type="radio" name="state4" class="powder"></label>
-            <label class ="color">Shade : <input type="color" value="#9A6751"></label>
+        <div class="product scrollfade --animate --hidden">
+            <img src="RESOURCE/mock.png" alt="pr1">
+            <details>
+                <summary>Flavour Name</summary><div class="productInfo">Price : 15$
+                    <label><img src="RESOURCE/bottle.png" alt="liquid">Liquid <input type="radio" name="state4" class="liquid" checked></label>
+                    <label><img src="RESOURCE/powder.png" alt="powder">Powder <input type="radio" name="state4" class="powder"></label>
+                <label class ="color">Shade : <input type="color" value="#9A6751"></label>
+            </div>
+            </details>
         </div>
-        </details>
-     </div>
-     <div class="storeItem"> 
-        <img src="RESOURCE/mock.png" alt="item5">
-        <details>
-            <summary>Flavour Name</summary><div class="productInfo">Price : 15$
+        <div class="product scrollfade --animate --hidden">
+            <img src="RESOURCE/mock.png" alt="pr2">
+            <details><summary>Flavour Name</summary><div class="productInfo">Price : 10$
                 <label><img src="RESOURCE/bottle.png" alt="liquid">Liquid <input type="radio" name="state5" class="liquid" checked></label>
                 <label><img src="RESOURCE/powder.png" alt="powder">Powder <input type="radio" name="state5" class="powder"></label>
-            <label class ="color">Shade : <input type="color" value="#9A6751"></label>
+                <label class ="color">Shade : <input type="color" value="#9A6751"></label>
+            </div></details>
         </div>
-        </details>
-     </div>
-     <div class="storeItem"> 
-        <img src="RESOURCE/mock.png" alt="item6">
-        <details>
-            <summary>Flavour Name</summary><div class="productInfo">Price : 15$
+        <div class="product scrollfade --animate --hidden">
+            <img src="RESOURCE/mock.png" alt="pr3">
+            <details><summary>Flavour Name</summary><div class="productInfo">Price : 20$
                 <label><img src="RESOURCE/bottle.png" alt="liquid">Liquid <input type="radio" name="state6" class="liquid" checked></label>
                 <label><img src="RESOURCE/powder.png" alt="powder">Powder <input type="radio" name="state6" class="powder"></label>
-            <label class ="color">Shade : <input type="color" value="#9A6751"></label>
+                <label class ="color">Shade : <input type="color" value="#9A6751"></label>
+            </div></details>
         </div>
-        </details>
-     </div>
-     <div class="storeItem"> 
-        <img src="RESOURCE/mock.png" alt="item7">
-        <details>
-            <summary>Flavour Name</summary><div class="productInfo">Price : 15$
-                <label><img src="RESOURCE/bottle.png" alt="liquid">Liquid <input type="radio" name="state7" class="liquid" checked></label>
-                <label><img src="RESOURCE/powder.png" alt="powder">Powder <input type="radio" name="state7" class="powder"></label>
-            <label class ="color">Shade : <input type="color" value="#9A6751"></label>
+        <div class="product scrollfade --animate --hidden">
+            <img src="RESOURCE/mock.png" alt="pr1">
+            <details>
+                <summary>Flavour Name</summary><div class="productInfo">Price : 15$
+                    <label><img src="RESOURCE/bottle.png" alt="liquid">Liquid <input type="radio" name="state7" class="liquid" checked></label>
+                    <label><img src="RESOURCE/powder.png" alt="powder">Powder <input type="radio" name="state7" class="powder"></label>
+                <label class ="color">Shade : <input type="color" value="#9A6751"></label>
+            </div>
+            </details>
         </div>
-        </details>
-     </div>
-     <div class="storeItem"> 
-        <img src="RESOURCE/mock.png" alt="item8">
-        <details>
-            <summary>Flavour Name</summary><div class="productInfo">Price : 15$
+        <div class="product scrollfade --animate --hidden">
+            <img src="RESOURCE/mock.png" alt="pr2">
+            <details><summary>Flavour Name</summary><div class="productInfo">Price : 10$
                 <label><img src="RESOURCE/bottle.png" alt="liquid">Liquid <input type="radio" name="state8" class="liquid" checked></label>
                 <label><img src="RESOURCE/powder.png" alt="powder">Powder <input type="radio" name="state8" class="powder"></label>
-            <label class ="color">Shade : <input type="color" value="#9A6751"></label>
+                <label class ="color">Shade : <input type="color" value="#9A6751"></label>
+            </div></details>
         </div>
-        </details>
-     </div>
-     <div class="storeItem"> 
-        <img src="RESOURCE/mock.png" alt="item9">
-        <details>
-            <summary>Flavour Name</summary><div class="productInfo">Price : 15$
+        <div class="product scrollfade --animate --hidden">
+            <img src="RESOURCE/mock.png" alt="pr3">
+            <details><summary>Flavour Name</summary><div class="productInfo">Price : 20$
                 <label><img src="RESOURCE/bottle.png" alt="liquid">Liquid <input type="radio" name="state9" class="liquid" checked></label>
                 <label><img src="RESOURCE/powder.png" alt="powder">Powder <input type="radio" name="state9" class="powder"></label>
-            <label class ="color">Shade : <input type="color" value="#9A6751"></label>
+                <label class ="color">Shade : <input type="color" value="#9A6751"></label>
+            </div></details>
         </div>
-        </details>
-     </div>
-    </div>
-    <div class="cart">
-        <div class="cartContainer">
-        <div class="cartText"> My Cart</div>
-        <div class="cartrow">
-            <span class="orderImg">Image</span>
-            <span class="orderedName"> Flavour</span>
-            <span class="physicalState"> Physical State</span>
-            <span class="shade">Shade</span>
-            <span class="price"> Price </span>
-        </div>
-        <div class="cartrow">
-            <span class="orderImg"><img alt="orderedItem"></span>
-            <span class="orderedName"> Flavour Name</span>
-            <span class="physicalState"> Powder</span>
-            <span class="shade">#FFFFF</span>
-            <span class="price"> $15 </span>
-        </div>
-        <button type="button" class="orderButton">Place Order</button>
-        <span class="total"> Total: $15</span>
-    </div>
-    </div>
+    </section>
+    <script type="text/javascript" src="JS/scrollfade.js"></script>
     <footer>
         <img src="RESOURCE/payment.png" alt="mastercard/visa" id="paymentCard">
         <p>FlaVoured is brought to you by: Moshir Ashraf , Abdulrahman Sherif , Khaled Yehia , Raghda Mahmoud and Moufid Magdy.
