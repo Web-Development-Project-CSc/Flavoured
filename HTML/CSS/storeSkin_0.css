@@ -67,7 +67,12 @@ header {
  top:0;
  right:0;
      margin: 2%;
-   }
+   }button:hover,input:hover{
+    box-shadow: 0px 3px 10px rgba(69, 69, 69, 0.655);
+      } 
+      input{
+        font-style: italic;
+      }
    .profileMenu a:hover{
        color: white;
        background-color: #99B19C;
@@ -78,7 +83,13 @@ header {
    .sticky {
      position: fixed;
      top: 0;
-   }
+   }input[type='text']:focus,input[type='color']:focus{
+    box-shadow: 0px 3px 10px rgba(25, 25, 25, 0.841);
+  } button,input[type='button']{
+    background-color: #A84448;
+    border-radius: 2px;
+    font-family: inherit;
+  }
  nav{
    top:120px;
    width:100%;
@@ -115,14 +126,23 @@ header {
   width:98.5%
   }
   
-  .storeItem img{
+  .items{
+    margin:5%;
+    width:100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-flow: row wrap;
+  }
+  
+  .product img{
     margin-top: 4%;
     width:90%;
     display: block;
     margin-left:auto;
     margin-right:auto;
   }
-  .storeItem{  
+  .product{  
     background-color:  rgba(205, 202, 202, 0.7);
     padding: 2px;
   margin:1%;
@@ -131,12 +151,18 @@ header {
   display: inline-table;
   border-radius: 10px;
   }
-  .storeItem summary{
+  .product summary{
+    cursor: pointer;
     outline: none;
     font-size: 25px;
     margin:5px;
     margin-bottom: 10px;
     list-style: none;
+    text-shadow: 3px 3px 3px #757575;
+  }
+  .product summary:hover{
+    color:#455d48;
+    text-shadow:none;
   }
   .productInfo img{
     width:30px;
@@ -150,12 +176,33 @@ header {
     font-weight: bold;
     padding-left: 10%;
     padding-right: 10%;
+  }.--hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .searchbar{
+    background-color:#757575;
+    height:125px;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    padding-right: 10px;
+  }
+  .--visible {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .--animate {
+    transition: opacity 0.4s ease-in-out;
+  }.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
   }
   label{
     font-size:15px;
     font-style: italic;
     display: inline-block;
-    margin:10px;
     width:100%;
     cursor: pointer; 
     text-shadow: .5em .5em .5em rgba(0, 0, 0, .1);
@@ -175,8 +222,9 @@ header {
     height: 3em;
     width: 3em;
     vertical-align: middle;
-  }
-  .contact{
+  } .product:hover{
+    box-shadow: 0px 3px 10px rgba(69, 69, 69, 0.534);
+  } .contact{
     font-size: 12px;
   display: inline-flex;
   margin-left: 10%;
@@ -186,101 +234,75 @@ header {
     width: 1.5em;
     margin-right: 0.6em;
   }
+  .product:hover{
+    box-shadow: 0px 3px 10px rgba(69, 69, 69, 0.534);
+  }
   #paymentCard{
     width:90px;
     float: right;
     margin:2%;
   }
-  .itemsContainer{
-    padding: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
-    width: 80%;
-    height: 70%;
-    align-items: center;
-  }
-  .storeItem{
-    display: inline-block;
-    background-color: #A84448;
-    border-radius: 20px;
-    margin: 20px;
-    width: 700px;
-    
-  }
-  .itemImg{
-    margin: auto;
-    margin-top: 10px;
-    display: block;
-    width:70%;
-    border-radius: 20px;
-  }
-  .storeItem{  
-    background-color:  rgba(205, 202, 202, 0.7);
-    padding: 2px;
-  margin:1%;
-  width:30%;
-  box-shadow: 1em 1em 1em rgba(0, 0, 0, .1);
-  display: inline-table;
-  border-radius: 10px;
-  }
-  .storeItem summary{
-    cursor: pointer;
-    outline: none;
-    font-size: 25px;
-    margin:5px;
-    margin-bottom: 10px;
-    list-style: none;
-  }
-  .productInfo img{
-    width:30px;
-    margin:2%;
-  }
-  .productInfo{
-    padding: 4%;
-    font-size:20px;
-    text-align: left;
-    display: block;
-    font-weight: bold;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  .productInfo img{
-    width:30px;
-    margin:2%;
-  }
-  .productInfo{
-    padding: 4%;
-    font-size:20px;
-    text-align: left;
-    display: block;
-    font-weight: bold;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  .flavourName{
-    margin-left: 30%;  
-  }
-  .storeItem:hover{
-    box-shadow: 0px 3px 10px rgba(69, 69, 69, 0.534);
-  }
-  .cart{
-    background-color: #A84448;
-    margin-right: 20%;
-    margin-left: 20%;
-    border-radius: 20px;
+  .type{
+    width:12%;
+    display: inline-flex;
   }
 
-  .cartText{
-color: #d4d4d4;
-margin-left: 18%;
-font-size: 60px;
-text-decoration: underline;
+  .type label{
+    display: inline-block;
+    cursor: pointer; 
+    text-shadow: .5em .5em .5em rgba(0, 0, 0, .1);
+  
   }
-  .cartrow{
-    display: block;
+  .type img{
+    float: none;
+    display: inline-block;
+    width:40px;
   }
-  .search{
-    margin-left: 40%;
+  .profilebar{
+  text-align: right;
+  width:100%;
+  margin-bottom: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .profilebar label{
+    margin:0.7em;
+  }
+  .profilebar input{
+    width:50%;
+    margin-right: 1em;
+  }
+  .bar input[type='text']{
+    width:65%;
+  }
+.bar{
+  height:120px;
+  width:85%;
+  padding: 2%;
+  margin-left: 5%;
+}
+.bar input[type='text']{
+  width:65%;
+}
+input[type='color']{
+    border:0;
+  background-color: rgba(255, 255, 255, 0.882);
+    padding: 5px;
+    border-radius: 2px;
+    margin-right:1.3em;
+    cursor:zoom-in;
+    height: 3.1em;
+    width:5em;
+    vertical-align: middle;
+  }button, input[type='text'],input[type='button'] {
+    display: inline-block;
+    color: inherit;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    padding: 12px 36px;
   }
