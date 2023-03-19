@@ -317,3 +317,33 @@ input[type='color']{
     border-radius: 2px;
     padding: 12px 36px;
   }
+  height: 3.1em;
+  width:5em;
+  vertical-align: middle;
+}button, input[type='text'],input[type='button'] {
+}
+button, input[type='text'],input[type='button'] {
+  display: inline-block;
+  color: inherit;
+  border: 0;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+  border-radius: 2px;
+  padding: 12px 36px;
+
+}
+.cart{
+background-color: #A84448;
+
+}
+.cartTable{
+margin-left: 300px;
+}
+
+.rowcolumn{
+margin: 2em;
+text-align: left;
+}
+.orderImg{
+width:60px;
+border-radius: 10px;
+}
