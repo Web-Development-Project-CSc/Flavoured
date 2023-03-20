@@ -21,5 +21,13 @@ function currentPage(n) {
     pages[pageNum-1].style.display = "block";  
     window.scrollTo({top :0, behavior:"smooth"});
 }
-  
+  let details = document.getElementsByClassName("productInfo");
+  let pos1 = '1%', pos2 = '34%', pos3='67%';
+  for (let i = 0; i < 27; i+=9) {
+  for(let j=0; j<9 ; j++){
+    if(j%3==0) details[j+i].style.left=pos1;
+    else if((j-1)%3 ==0) details[j+i].style.left=pos2;
+    else details[j+i].style.left=pos3;
+  }
+  }
   

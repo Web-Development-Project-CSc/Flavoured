@@ -1,15 +1,16 @@
 
 class Account {
-    name;
-    password;
-    country;
-    phone;
-    address;
-    birthdate;
-    email;
-    paymentMethod;
-    numofpurchases;
-    boughtProducts;
+    name= '';
+    password ='';
+    country ='';
+    phone ='';
+    address='';
+    birthdate='';
+    email='';
+    paymentMethod ='';
+    numofpurchases=0;
+    boughtProducts = [];
+    id = 0;
     constructor(name, password, country, phone, address,email,birthdate){
         this.name=name;
         this.password= password;
@@ -79,39 +80,77 @@ class Account {
     set boughtProducts(value) {
         this.boughtProducts = value;
     }
+    set id(value) {
+        this.id = value;
+    }
+    get id() {
+       return this.ids;
+    }
     buyproduct(product){
         this.boughtProducts.push(product);
         this.numofpurchases++;
     }
 }
-function key(value) {
-    let sum = value.map(char => char.charCodeAt(0))
-    .reduce((current, previous) => previous + current)
+function makeid(user){
+    for(let i=0; i<user.email.length; i++) user.id += user.email.codePointAt(i);
+    return user.id;
+}
+function getid(email){
+    let sum = 0;
+    for(let i=0; i<email.length; i++) sum += email.codePointAt(i);
     return sum;
 }
-var users = [];
+let users = [];
+let admin = new Account('Admin','12345','Egypt','012','FLAVOURED CO','flavouredmiu@gmail.com','2007-01-01');
 function addUser(user){
-users[key(user.email)](user);
+makeid(user);
+users[user.id] = user;
 }
-function removeUser(email) {
-    users.splice(key(email), 1);
+function removeUser(id) {
+    users.splice(id, 1);
+    return users[id];
 }
-function getUser(email){
-    if(userExists(email))
-    return users[key(email)];
+function getUser(id){
+    if(userExists(id))
+    return users[id];
     else return ("user not found");
 }
 
-function userExists(email){
-    if(users[key(email)]!=undefined)
-    return true;
+function userExists(id){
+    if(users[id] instanceof Account)  return true;
     else return false;
 }
 function validateData(email,password){
-if(userExists(email)){
-    if(users[key(email)].password==password)
+if(userExists(getid(email))){
+    if(users[getid(email)].password==password)
     return 1;
     else return 0;
 }
 else return -1;
+}
+let tester = new Account('Tester','pass','EGYPT','012345','ACCOUNT.JS','tester@flavoured.com','2023-03-20');
+addUser(admin);
+addUser(tester);
+// console.log(getUser(getid(admin.email)));
+// console.log(getUser(getid(tester.email)));
+
+let p =document.getElementById("psw");
+let e = document.getElementById('email');
+p.onchange = function() {confirm()};
+e.onfocus = function() {hide()};
+function confirm(){
+   let d = validateData(e.value,p.value);
+   if(d==0){
+    document.getElementById('error0').style.display='block';
+    document.getElementById('error-1').style.display='none';
+   }
+   else if(d==-1){
+    document.getElementById('error0').style.display='none';
+    document.getElementById('error-1').style.display='block';
+   }
+   else hide();
+}
+function hide(){
+    document.getElementById('error0').style.display='none';
+    document.getElementById('error-1').style.display='none';
 }

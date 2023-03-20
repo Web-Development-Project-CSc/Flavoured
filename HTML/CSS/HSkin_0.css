@@ -181,7 +181,12 @@ font-style: italic;
 	opacity: 0;
 	pointer-events: none;
 }
-
+.product details[open] .productInfo{
+  z-index: 5;
+  position:absolute;
+  padding:2%;
+  width:26%
+}
 .--visible {
 	opacity: 1;
 	pointer-events: all;
@@ -227,7 +232,11 @@ font-style: italic;
   margin-left:auto;
   margin-right:auto;
 }
-.product{  
+.product summary:hover{
+  color:#455d48;
+  text-shadow:none;
+}
+.product, details[open] .productInfo{  
   background-color:  rgba(205, 202, 202, 0.7);
   padding: 2px;
 margin:1%;

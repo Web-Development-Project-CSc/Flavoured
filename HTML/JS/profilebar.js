@@ -71,12 +71,21 @@ savers[6].addEventListener('click', function (e){
 })
 
 let params = new URLSearchParams(window.location.search);
-results[0].innerHTML = params.get('name');
-results[1].innerHTML = params.get('email');
-results[5].innerHTML = params.get('country');
-results[6].innerHTML = params.get('address');
-results[4].innerHTML = params.get('birthdate');
-results[3].innerHTML = params.get('mobile');
+let temp = params.get('name');
+if(temp!=null) results[0].innerHTML = params.get('name');
+temp = params.get('email');
+if(temp!=null) results[1].innerHTML = params.get('email');
+temp =params.get('country');
+if(temp!=null) results[5].innerHTML = params.get('country');
+temp =params.get('address');
+if(temp!=null) results[6].innerHTML = params.get('address');
+temp = params.get('birthdate');
+if(temp!=null) results[4].innerHTML = params.get('birthdate');
+temp = params.get('mobile');
+if(temp!=null) results[3].innerHTML = params.get('mobile');
+temp = params.get('psw');
+if(temp!=null){
 let x = '';
 for(let i=0; i<params.get('psw').length; i++)  x+= '•';
 results[2].innerHTML = x;
+}

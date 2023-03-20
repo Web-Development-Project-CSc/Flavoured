@@ -153,7 +153,7 @@ header {
     margin-left:auto;
     margin-right:auto;
   }
-  .product{  
+  .product,details[open] .productInfo{  
     background-color:  rgba(205, 202, 202, 0.7);
     padding: 2px;
   margin:1%;
@@ -317,11 +317,7 @@ input[type='color']{
     border-radius: 2px;
     padding: 12px 36px;
   }
-  height: 3.1em;
-  width:5em;
-  vertical-align: middle;
-}button, input[type='text'],input[type='button'] {
-}
+
 button, input[type='text'],input[type='button'] {
   display: inline-block;
   color: inherit;
@@ -331,6 +327,13 @@ button, input[type='text'],input[type='button'] {
   padding: 12px 36px;
 
 }
+.product details[open] .productInfo{
+  z-index: 5;
+  position:absolute;
+  padding:2%;
+  width:26%
+}
+
 .cart{
 background-color: #A84448;
 
