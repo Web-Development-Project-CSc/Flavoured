@@ -34,7 +34,8 @@ function currentPage(n) {
   let items ='', bought = 0;
   for(let i =0; i<carts.length; i++) carts[i].addEventListener("click", function(){
     bought++; 
-    items += 'item' + i + ' ';
+    if(i<10) items += '0' + i + ' ';
+   else  items += i + ' ';
     add(); 
   });
   function add(){
