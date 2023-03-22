@@ -1,61 +1,117 @@
-html{
+html {
     max-width: 100%;
 }
+
 body {
     background-color: #f5f0e3;
     color: white;
     font-family: 'Times New Roman';
-   margin:0;
-   left:0; right: 0;
-   width: 100%;
-   text-align: center;
-  }
-  form {
-    background-color: #A84448;
+    margin: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+}
+
+form {
+    background-color: #713c5f;
     margin: auto;
-    width: 80%;
-    height: 40%;
-    border-radius: 20px;
+    width: 50%;
+    border-radius: 30px;
 }
-img{
-    width:30px
+
+img {
+    width: 30px
 }
-#logo{
-    width:20%;
-    margin:10px;
+
+#logo {
+    width: 20%;
+    margin: 10px;
 }
-header{
+
+header {
     font-size: 299%;
-width:95.8%;
-text-align: left;
- background-color:  #99B19C;  
-   padding: 1%;
+    width: 93.65%;
+    text-align: left;
+    background-color: #A84448;
+    padding: 1%;
     padding-left: 40px;
     margin: 0%;
 }
-.item{
-    background-color:white;
-    color: rgb(196, 151, 40);
-    width:90%;
-    text-align: left;
-padding: 1%;
-   margin: 3%;
-   margin-left:4%;
-    border-radius: 20px;
-    padding-bottom: 12%;
+
+h2 {
+    color: #c49728;
 }
-.item:hover{
+
+.item {
+    background-color: white;
+    color: #c49728;
+    width: 90%;
+    text-align: left;
+    padding: 1%;
+    margin: 3%;
+    margin-left: 4%;
+    border-radius: 20px;
+    padding-bottom: 18%;
+    border-color: #A84448;
+    border: solid;
+    border-width: 2px;
+}
+
+.item:hover,
+.quantity img:hover {
     box-shadow: 0px 3px 10px rgb(0, 0, 0);
 }
-h1{
-    color:rgb(57, 57, 57)
+
+h1 {
+    color: rgb(57, 57, 57)
 }
-.pr{
-    width:20%;
+
+.pr {
+    width: 30%;
+    margin-bottom: 5px;
     border-radius: 20px;
     float: right;
     margin-right: 2%;
 }
-.quantity img{
-    width:50px;
+
+.quantity img {
+    width: 60px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.quantity{
+    margin-left: 2%;
+}
+
+#num {
+    border: solid;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgb(237, 237, 237);
+    margin-left: 10px;
+    margin-right: 12px;
+    padding: 2.5%;
+    box-shadow: 0px 3px 10px rgb(47, 47, 47);
+    color: rgb(57, 57, 57);
+    font-weight: bold;
+    font-size:30px ;
+}
+
+button {
+    width: 75px;
+    background-color: #A84448;
+    border-color: #f5f0e3;
+    border-width: 2px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+span{
+    display: inline-block;
+    vertical-align: middle;
+}
+button:hover {
+    box-shadow: 0px 3px 10px rgb(0, 0, 0);
 }
