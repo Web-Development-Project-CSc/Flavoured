@@ -1,7 +1,6 @@
 let num = document.getElementsByClassName("page");
 let pages = document.getElementsByClassName("items");
 let carts = document.querySelectorAll(".cart button");
-let bought = 0;
 currentPage(1);
 function currentPage(n) {
     showPage(pageNum = n);
@@ -32,14 +31,16 @@ function currentPage(n) {
     else details[j+i].style.left=pos3;
   }
   }
+  let items ='', bought = 0;
   for(let i =0; i<carts.length; i++) carts[i].addEventListener("click", function(){
     bought++; 
+    items += 'item' + i + ' ';
     add(); 
   });
   function add(){
     document.getElementById("go").innerText = '(' + bought + ')';
     let a = document.querySelector(".go a");
     let url = new URL(a.href);
-    url.searchParams.set("num", bought);
+    url.searchParams.set("item", items);
     a.href = url.toString();
   }
