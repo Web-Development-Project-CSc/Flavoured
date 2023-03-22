@@ -7,10 +7,6 @@ let int =0;
     let sum =0;
 for(let i=0; i<param.get('num'); i++) 
     sum += 35;
-total.innerHTML = sum + '$';
-number.innerHTML = param.get('num');
-number.innerHTML =  1;
-total.innerHTML = 35 + '$';
 int = param.get('num');
 let buttons = document.querySelectorAll('.quantity img');
 buttons[1].addEventListener("click", function(){

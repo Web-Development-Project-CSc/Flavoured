@@ -43,5 +43,6 @@ function currentPage(n) {
     let a = document.querySelector(".go a");
     let url = new URL(a.href);
     url.searchParams.set("item", items);
+    url.searchParams.append("num", bought);
     a.href = url.toString();
   }
