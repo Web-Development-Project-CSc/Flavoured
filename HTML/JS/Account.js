@@ -144,14 +144,28 @@ function confirm(){
    if(d==0){
     document.getElementById('error0').style.display='block';
     document.getElementById('error-1').style.display='none';
+    return 0;
    }
    else if(d==-1){
     document.getElementById('error0').style.display='none';
     document.getElementById('error-1').style.display='block';
+    return false;
    }
-   else hide();
+   else {hide(); return true}
 }
 function hide(){
     document.getElementById('error0').style.display='none';
     document.getElementById('error-1').style.display='none';
+}
+document.getElementById('logger').addEventListener("click", function(event){
+    event.preventDefault();
+    if(confirm()==true) {
+     if(getUser(getid(e.value))==getUser(admin.id))
+      location.replace("dashboard.html");
+     else return;
+    }
+    else return false;
+  });
+document.getElementById('cancel').onclick = function(){
+    location.replace("HOME.html")
 }
