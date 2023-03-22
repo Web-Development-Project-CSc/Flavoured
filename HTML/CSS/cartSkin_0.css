@@ -14,8 +14,10 @@ body {
 }
 
 form {
+    margin-top: 10px;
     background-color: #713c5f;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
     border-radius: 30px;
 }
@@ -52,7 +54,7 @@ h2 {
     margin: 3%;
     margin-left: 4%;
     border-radius: 20px;
-    padding-bottom: 10%;
+    padding-bottom: 6%;
     border-color: #A84448;
     border: solid;
     border-width: 2px;
@@ -82,8 +84,8 @@ h1 {
 }
 
 .quantity {
-    margin-top: 60px;
-    margin-left: 40px;
+    margin-top: 80px;
+    margin-left: 100px;
 }
 
 #num {
