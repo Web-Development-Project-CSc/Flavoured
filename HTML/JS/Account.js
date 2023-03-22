@@ -133,6 +133,7 @@ addUser(admin);
 addUser(tester);
 // console.log(getUser(getid(admin.email)));
 // console.log(getUser(getid(tester.email)));
+// console.log(users);
 
 let p =document.getElementById("psw");
 let e = document.getElementById('email');

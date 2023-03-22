@@ -102,14 +102,26 @@ header {
      right:0;
      z-index: 2;
  }
- nav a{
+ nav a, .go a{
      text-decoration: none;
      color: white;
-     position: relative;
      padding:5px;
      margin-left: 7px;
      margin-right: 7px;
      display: inline-block;
+ }
+ .go a{
+      background-color: #99B19C;
+      vertical-align: middle;
+      padding: 0.5%;
+ }
+ .go img{
+  height:37px;
+  margin-right: 5px;
+  margin-top: 3px;
+ }
+ .go a:hover{
+  background-color: #A84448;
  }
  nav a:hover{
      background-color: #99B19C;
@@ -123,7 +135,7 @@ header {
     padding-left: 20px;
     font-size: 15px;
   color:#d4d4d4;
-  width:98.5%
+  width:98.5%;
   }
   .page{
     cursor: pointer;
@@ -225,17 +237,7 @@ header {
   input[type="radio"] {
     box-shadow: .5em .5em .5em rgba(0, 0, 0, .1);
   }
-  input[type="color"]{
-    border:0;
-    background:0;
-    padding: 0;
-    cursor:zoom-in;
-    height: 3em;
-    width: 3em;
-    vertical-align: middle;
-  } .product:hover{
-    box-shadow: 0px 3px 10px rgba(69, 69, 69, 0.534);
-  } .contact{
+.contact{
     font-size: 12px;
   display: inline-flex;
   margin-left: 10%;
@@ -264,8 +266,7 @@ header {
     text-shadow: .5em .5em .5em rgba(0, 0, 0, .1);
   
   }
-  .type img{
-    float: none;
+  .type img, .go img{
     display: inline-block;
     width:40px;
   }
@@ -283,9 +284,6 @@ header {
     width:50%;
     margin-right: 1em;
   }
-  .bar input[type='text']{
-    width:65%;
-  }
 .bar{
   height:120px;
   width:85%;
@@ -294,6 +292,8 @@ header {
 }
 .bar input[type='text']{
   width:65%;
+  color:#757575;
+
 }
 input[type='color']{
     border:0;
@@ -317,10 +317,6 @@ input[type='color']{
     border-radius: 2px;
     padding: 12px 36px;
   }
-
-input[type='text']{
-  color:#757575;
-}
 .product details[open] .productInfo{
   z-index: 5;
   position:absolute;
@@ -343,4 +339,30 @@ text-align: left;
 .orderImg{
 width:60px;
 border-radius: 10px;
+}
+.cart button {
+  background-color: #ffffff00;
+  padding: 3%;
+  border-style:none;
+}
+.cart img{
+  margin-right: 0.6em;
+}
+.cart{
+  background-color: #d3d3d300;
+  padding: 2%;
+  margin: 0%;
+  border-radius: 0px;
+  border-style:none;
+  width:90%;
+}
+.cart button:active{
+  box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, .1);
+}
+#gotocart{
+  background-color: #ffffff00;
+  padding:1%;
+  display:inline-flex;
+  margin:0%;
+  z-index: 3px;;
 }
