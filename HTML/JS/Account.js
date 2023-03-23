@@ -167,5 +167,5 @@ document.getElementById('logger').addEventListener("click", function(event){
     else return false;
   });
 document.getElementById('cancel').onclick = function(){
-    location.replace("HOME.html")
+    location.replace("index.html")
 }
