@@ -7,7 +7,7 @@
 
 
 
-![Logo](https://github.com/Web-Development-Project-CSc/Flavoured/blob/main/HTML/RESOURCE/Flavoured%20with%20slogann.png)
+![Logo](https://raw.githubusercontent.com/Web-Development-Project-CSc/Flavoured/main/HTML/RESOURCE/Flavoured%20with%20slogann.png)
 
 
 ## Creators
