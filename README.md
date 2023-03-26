@@ -7,7 +7,7 @@
 
 
 
-![Logo](HTML\RESOURCE\Flavoured_with_slogan-transformedd.png)
+![Logo](https://github.com/Web-Development-Project-CSc/Flavoured/blob/main/HTML/RESOURCE/Flavoured_with_slogan-transformedd.png)
 
 
 ## Creators
