@@ -1,0 +1,19 @@
+{
+  "name": "flavoured",
+  "version": "1.0.0",
+  "description": "***Flavoured*** is an E-commerce web application created as the SWE23004 Web Development course project to showcase the ability of 5 students in full stack developing. The front-end of the application showcases the use of HTML and CSS and EC6 \"*JavaScript*\", while the back-end utilizes the MERN stack in its development.",
+  "main": "HTML/JS/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Web-Development-Project-CSc/Flavoured.git"
+  },
+  "author": "Group 8",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Web-Development-Project-CSc/Flavoured/issues"
+  },
+  "homepage": "https://github.com/Web-Development-Project-CSc/Flavoured#readme"
+}

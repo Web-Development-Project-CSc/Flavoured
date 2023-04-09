@@ -2,7 +2,8 @@ html{
   max-width: 100%;
 }
 body {
-    color: rgb(255, 255, 255);
+    background-color: #f5f0e3;
+    color: white;
     font-family: 'Times New Roman';
     font-size: 20px;
    margin:0;
@@ -37,7 +38,7 @@ header {
   margin-top: 7%;
 }
 .bigIcon{
-  background-color: #ede8de;
+  background-color: rgba(182, 179, 179, 0.7);
   width:90%;
   margin:6%;
   margin-top: 2%;
@@ -45,7 +46,7 @@ header {
 }
 .profileMenu {
    display: none;
-   background-color:#ffffff;
+   background-color:#f9f1db;
    float: right;
    margin: 1%;
    border-color: #A84448;
@@ -150,7 +151,7 @@ border-radius: 2px;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #000000;
+  background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -158,7 +159,7 @@ border-radius: 2px;
 .info{
   margin:2%;
   display: block;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(205, 202, 202, 0.7);
   padding: 10px;
   height:400px;
   border-radius: 10px;
@@ -194,7 +195,7 @@ font-style: italic;
 	transition: opacity 0.4s ease-in-out;
 }
 .active, .dot:hover {
-  background-color: #2c2c2c;
+  background-color: #717171;
 }
 .fade {
   animation-name: fade;
@@ -217,10 +218,10 @@ font-style: italic;
 .itemsHeader{
   margin-bottom: 2%;
   font-size: 85px;
-  text-shadow: 3px 3px 3px #2d2d2d;
+  text-shadow: 3px 3px 3px #757575;
   font-stretch: extra-expanded;
   display: block;
-  color:#ede8de;
+  color:rgba(255, 255, 255, 0.873);
 }
 
 .product img{
@@ -231,15 +232,15 @@ font-style: italic;
   margin-right:auto;
 }
 .product summary:hover{
-  color:#c9cfca;
+  color:#455d48;
   text-shadow:none;
 }
 .product, details[open] .productInfo{  
-  background-color:  rgba(0, 0, 0, 0.7);
+  background-color:  rgba(205, 202, 202, 0.7);
   padding: 2px;
 margin:1%;
 width:30%;
-box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.651);
+box-shadow: 1em 1em 1em rgba(0, 0, 0, .1);
 display: inline-table;
 border-radius: 10px;
 }
