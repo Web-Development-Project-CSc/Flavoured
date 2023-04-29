@@ -24,7 +24,7 @@ form {
 }
 
 img {
-    width: 30px
+    width: 30px;
 }
 
 #logo {
@@ -34,28 +34,32 @@ img {
 
 header {
     font-size: 299%;
-    width: 93.65%;
+    width: 94.68%;
     text-align: left;
     background-color: #a74447;
     padding: 1%;
     padding-left: 40px;
     margin: 0%;
+
 }
 
 h2 {
     color: #c49728;
 }
-
+ h1, h2{
+    margin: 3%;
+ }
 .item {
     background-color: white;
     color: #c49728;
-    width: 90%;
+    width: 80%;
+    height:250px;
     text-align: left;
     padding: 1%;
     margin: 3%;
-    margin-left: 4%;
+    margin-left: 8%;
     border-radius: 20px;
-    padding-bottom: 6%;
+    padding-bottom: 7%;
     border-color: #A84448;
     border: solid;
     border-width: 2px;
@@ -72,6 +76,7 @@ h1 {
 
 .pr {
     width: 30%;
+    height:160px;
     margin-bottom: 5px;
     border-radius: 20px;
     float: right;
