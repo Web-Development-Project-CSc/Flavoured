@@ -87,7 +87,7 @@ right:0;
     margin: 2%;
   }
   .profileMenu a:hover{
-      color: white;
+      color: #ffffff;
       background-color: #99B19C;
   }
   .menuOn:hover .profileMenu{
