@@ -124,6 +124,9 @@ nav a:hover{
 width:250px;
 height:400px;
 margin: 0%;
+margin-left:1%;
+padding-bottom: 1%;
+padding-top: 1%;
 float:left;
 box-sizing: border-box;
 border-radius: 2px;
@@ -222,12 +225,13 @@ font-style: italic;
   text-shadow: 3px 3px 3px #757575;
   font-stretch: extra-expanded;
   display: block;
-  color:rgba(255, 255, 255, 0.873);
+  color:#213c83;
 }
 
 .product img{
   margin-top: 4%;
-  width:90%;
+  width:87%;
+  height:410px;
   display: block;
   margin-left:auto;
   margin-right:auto;
