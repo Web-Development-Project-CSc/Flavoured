@@ -222,10 +222,10 @@ font-style: italic;
 .itemsHeader{
   margin-bottom: 2%;
   font-size: 85px;
-  text-shadow: 3px 3px 3px #757575;
+  text-shadow: 3px 3px 3px #272542;
   font-stretch: extra-expanded;
   display: block;
-  color:#213c83;
+  color:#2a395f;
 }
 
 .product img{
@@ -241,13 +241,14 @@ font-style: italic;
   text-shadow:none;
 }
 .product, details[open] .productInfo{  
-  background-color:  rgba(205, 202, 202, 0.7);
+  background-color:#ededed;
   padding: 2px;
 margin:1%;
 width:30%;
 box-shadow: 1em 1em 1em rgba(0, 0, 0, .1);
 display: inline-table;
 border-radius: 10px;
+color:rgb(17, 17, 17)
 }
 .product summary{
   cursor: pointer;
