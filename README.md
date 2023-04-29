@@ -56,7 +56,6 @@
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Background Color | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff |
 | Color 1 | ![#713c5f](https://via.placeholder.com/10/713c5f?text=+) #713c5f |
 | Color 2 | ![#A84448](https://via.placeholder.com/10/A84448?text=+) #A84448 |
 | Color 3 | ![#99B19C](https://via.placeholder.com/10/99B19C?text=+) #99B19C |
