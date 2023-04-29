@@ -56,11 +56,12 @@
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Background Color | ![#f9f1db](https://via.placeholder.com/10/f9f1db?text=+) #f9f1db |
+| Background Color | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff |
 | Color 1 | ![#713c5f](https://via.placeholder.com/10/713c5f?text=+) #713c5f |
 | Color 2 | ![#A84448](https://via.placeholder.com/10/A84448?text=+) #A84448 |
 | Color 3 | ![#99B19C](https://via.placeholder.com/10/99B19C?text=+) #99B19C |
 | Color 4 | ![#fec007](https://via.placeholder.com/10/fec007?text=+) #fec007 |
+| Color 5 | ![#ededed](https://via.placeholder.com/10/ededed?text=+) #ededed |
 
 ## Features
 
