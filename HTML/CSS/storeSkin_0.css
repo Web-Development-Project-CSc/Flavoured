@@ -170,13 +170,15 @@ header {
     margin-right:auto;
   }
   .product,details[open] .productInfo{  
-    background-color:  rgba(205, 202, 202, 0.7);
-    padding: 2px;
-  margin:1%;
-  width:30%;
-  box-shadow: 1em 1em 1em rgba(0, 0, 0, .1);
-  display: inline-table;
-  border-radius: 10px;
+    background-color:#ededed;
+  color:rgb(17, 17, 17);
+  padding: 2px;
+margin:1%;
+width:30%;
+box-shadow: 1em 1em 1em rgba(0, 0, 0, .1);
+display: inline-table;
+border-radius: 10px;
+font-size: 2emu;
   }
   .product summary{
     cursor: pointer;
@@ -185,10 +187,9 @@ header {
     margin:5px;
     margin-bottom: 10px;
     list-style: none;
-    text-shadow: 3px 3px 3px #757575;
   } 
   .product summary:hover{
-    color:#455d48;
+    color:#657c68;
     text-shadow:none;
   }
   .productInfo img{

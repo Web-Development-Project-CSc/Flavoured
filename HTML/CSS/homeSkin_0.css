@@ -247,13 +247,13 @@ color:rgb(64, 64, 64)
 }
 .product, details[open] .productInfo{  
   background-color:#ededed;
+  color:rgb(17, 17, 17);
   padding: 2px;
 margin:1%;
 width:30%;
 box-shadow: 1em 1em 1em rgba(0, 0, 0, .1);
 display: inline-table;
 border-radius: 10px;
-color:rgb(17, 17, 17);
 font-size: 2emu;
 }
 .product summary{
@@ -328,7 +328,7 @@ margin-right: auto;
   margin-right: 0.6em;
 }
 .product:hover{
-  box-shadow: 0px 3px 10px rgba(69, 69, 69, 0.534);
+ box-shadow: 0px 3px 10px rgba(69, 69, 69, 0.534);
 }
 #paymentCard{
   width:90px;
