@@ -1,6 +1,10 @@
 html{
   max-width: 100%;
 }
+.productimg{
+  width: 87%;
+  height: 450px;
+}
 body {
     background-color: white;
     color: white;
@@ -230,8 +234,7 @@ font-style: italic;
 
 .product img{
   margin-top: 4%;
-  width:87%;
-  height:410px;
+  width:90;
   display: block;
   margin-left:auto;
   margin-right:auto;
