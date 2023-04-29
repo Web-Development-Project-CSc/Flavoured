@@ -1,6 +1,10 @@
 html{
     max-width: 100%;
 }
+.productimg{
+  width: 87%;
+  height: 450px;
+}
 body {
     background-color: white;
     color: white;
@@ -365,8 +369,4 @@ border-radius: 10px;
   display:inline-flex;
   margin:0%;
   z-index: 3px;;
-}
-.product img{
-  width: 70%;
-  height: 50%;
 }
