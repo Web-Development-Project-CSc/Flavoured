@@ -141,7 +141,7 @@ border-radius: 2px;
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: rgb(38, 38, 38);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -152,7 +152,7 @@ border-radius: 2px;
   border-radius: 3px 0 0 3px;
 }
 .prev:hover, .next:hover {
-  background-color: rgba(43, 43, 43, 0.8);
+  background-color: rgba(197, 197, 197, 0.8);
 }
 .dot {
   cursor: pointer;
@@ -167,7 +167,7 @@ border-radius: 2px;
 .info{
   margin:2%;
   display: block;
-  background-color: rgba(205, 202, 202, 0.7);
+  background-color:#ededed;
   padding: 10px;
   height:400px;
   border-radius: 10px;
@@ -183,6 +183,7 @@ width: 70%;
 margin-left: auto;
 margin-right: 5%;
 font-style: italic;
+color:rgb(64, 64, 64)
 }
 .--hidden {
 	opacity: 0;
@@ -224,12 +225,13 @@ font-style: italic;
   flex-flow: row wrap;
 }
 .itemsHeader{
-  margin-bottom: 2%;
+  margin-bottom: 5%;
+  margin-top: 5%;
   font-size: 85px;
-  text-shadow: 3px 3px 3px #272542;
+  text-shadow: 3px 3px 3px #f9f1db;
   font-stretch: extra-expanded;
   display: block;
-  color:#2a395f;
+  color:#455d48;
 }
 
 .product img{
@@ -240,7 +242,7 @@ font-style: italic;
   margin-right:auto;
 }
 .product summary:hover{
-  color:#455d48;
+  color:#657c68;
   text-shadow:none;
 }
 .product, details[open] .productInfo{  
@@ -251,7 +253,8 @@ width:30%;
 box-shadow: 1em 1em 1em rgba(0, 0, 0, .1);
 display: inline-table;
 border-radius: 10px;
-color:rgb(17, 17, 17)
+color:rgb(17, 17, 17);
+font-size: 2emu;
 }
 .product summary{
   cursor: pointer;
@@ -292,12 +295,15 @@ input[type="radio"] {
 }
 input[type="color"]{
   border:0;
-  background:0;
-  padding: 0;
-  cursor:zoom-in;
-  height: 3em;
-  width: 3em;
-  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0.882);
+    padding: 5px;
+    border-radius: 2px;
+    margin-right:1.3em;
+    cursor:zoom-in;
+    height: 3.1em;
+    width:5em;
+    vertical-align: middle;
+
 }
 footer{
   background-color: #713c5f;
