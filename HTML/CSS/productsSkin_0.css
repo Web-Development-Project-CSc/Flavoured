@@ -252,4 +252,8 @@ ul{
   height:175px;
 }
 ul input{
-float:right  }
+float:right  
+}
+#edit input{
+  margin-left: 10%;
+}
