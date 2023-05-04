@@ -1,232 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Flavoured/my profile</title>
-        <link rel="stylesheet" href="CSS/myprofileSkin_0.css"/>
-    </head>
-    <body>
-        <header>
-            <a href="HOME.html"><img class="logo" src="RESOURCE/Flavoured_with_slogan-transformedd.png" alt="flavoured"/></a>
-        </header>
-        <nav id="navbar">
-            <div class="scroller active" onclick="move(this)">My Information</div>
-            <div class="scroller" onclick="move(this)">My Orders</div>
-            <div class="scroller" onclick="move(this)">Payment Methods</div>
-            <a href="STORE.html">Store</a>
-            <a href="HELP.html">Support</a>
-        </nav>
-        <section>
-            <div class="profile">
-                <label>Full Name :
-                    <span id="clientName">Fname Mname Lname
-                    </span>
-                </label>
-                <details>
-                    <summary><img src="RESOURCE/editing.png" alt="edit"/></summary>
-                    <input type="text" name="name" id="name" placeholder="edit your name"/>
-                    <button type="button" id="savename">Save</button>
-                </details>
-            </div>
-            <div class="profile">
-                <label>Email :
-                    <span id="clientEmail">Person@mail.com</span>
-                </label>
-                <details>
-                    <summary><img src="RESOURCE/editing.png" alt="edit"/></summary>
-                    <input type="email" name="email" id="email" placeholder="edit your email"/>
-                    <button type="button" id="saveemail">Save</button>
-                </details>
-            </div>
-            <div class="profile">
-                <label>Password :
-                    <span id="clientPassword">••••••••</span>
-                </label>
-                <details>
-                    <summary><img src="RESOURCE/editing.png" alt="edit"/></summary>
-                    <input type="password" id="password" name="password" placeholder="edit your password"/>
-                    <button type="button" id="savepassword">Save</button>
-                </details>
-            </div>
-            <div class="profile">
-                <label>Phone Number :
-                    <span id="clientPhone">+01 234567890</span>
-                </label>
-                <details>
-                    <summary><img src="RESOURCE/editing.png" alt="edit"/></summary>
-                    <input type="tel" id="tel" name="tel" placeholder="edit your number"/>
-                    <button type="button" id="savetel">Save</button>
-                </details>
-            </div>
-            <div class="profile">
-                <label>Birth Date :
-                    <span id="clientBirthdate">YYYY-MM-DD</span>
-                </label>
-                <details>
-                    <summary><img src="RESOURCE/editing.png" alt="edit"/></summary>
-                    <input type="date" name="bd" id="bd" max="2007-01-01" placeholder="edit your birthdate"/>
-                    <button type="button" id="savebd">Save</button>
-                </details>
-            </div>
-            <div class="profile">
-                <label>Country :
-                    <span id="clientCountry">Country Name</span>
-                </label>
-                <details>
-                    <summary><img src="RESOURCE/editing.png" alt="edit"/></summary>
-                    <input type="text" name="country" id="country" placeholder="edit your country"/>
-                    <button type="button" id="savecountry">Save</button>
-                </details>
-            </div>
-            <div class="profile">
-                <label>Address :
-                    <span id="clientAddress">012th street building 4</span>
-                </label>
-                <details>
-                    <summary><img src="RESOURCE/editing.png" alt="edit"/></summary>
-                    <input type="text" name="address" id="address" placeholder="edit your address"/>
-                    <button type="button" id="saveaddress">Save</button>
-                </details>
-            </div>
-        </section>
-        <section class="orders">
-            <details class="current">
-                <summary class="orderheader">Ongoing Orders:</summary>
-                <div class="currentOrder">
-                    <details>
-                        <summary>Order Id : #123</summary>
-                        <div class="product">
-                            <span class="data">
-                                Kentucky Fried Chicken  EGP 45.02
-                            </span>
-                            <span class="statusBar">
-                                <img src="RESOURCE/delivered.png" alt="status"/>
-                                <img src="RESOURCE/shipping.png" alt="status"/>
-                                <img src="RESOURCE/placed.png" alt="status" class="done"/></span>
-                        </div>
-                    </details>
-                </div>
-                <div class="currentOrder">
-                    <details>
-                        <summary>Order Id : #067</summary>
-                        <div class="product">
-                            <span class="data">
-                                Takis  EGP 47.00
-                            </span>
-                            <span class="statusBar">
-                                <img src="RESOURCE/delivered.png" alt="status"/>
-                                <img src="RESOURCE/shipping.png" alt="status"/>
-                                <img src="RESOURCE/placed.png" alt="status"/></span>
-                        </div>
-                    </details>
-                </div>
-                <div class="currentOrder">
-                    <details>
-                        <summary>Order Id : #122</summary>
-                        <div class="product">
-                            <span class="data">
-                                Cinnabon  EGP 36.00</span>
-                            <span class="statusBar">
-                                <img src="RESOURCE/delivered.png" alt="status"/>
-                                <img src="RESOURCE/shipping.png" alt="status" class="done"/>
-                                <img src="RESOURCE/placed.png" alt="status" class="done"/></span>
-                        </div>
-                    </details>
-                </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flavoured/my profile</title>
+    <link rel="stylesheet" href="CSS/myprofileSkin_0.css" />
+</head>
+
+<body>
+    <header>
+        <a href="HOME.html"><img class="logo" src="RESOURCE/Flavoured_with_slogan-transformedd.png"
+                alt="flavoured" /></a>
+    </header>
+    <nav id="navbar">
+        <div class="scroller active" onclick="move(this)">My Information</div>
+        <div class="scroller" onclick="move(this)">My Orders</div>
+        <div class="scroller" onclick="move(this)">Payment Methods</div>
+        <a href="STORE.html">Store</a>
+        <a href="HELP.html">Support</a>
+    </nav>
+    <section>
+        <div class="profile">
+            <label>Full Name :
+                <span id="clientName">Fname Mname Lname
+                </span>
+            </label>
+            <details>
+                <summary><img src="RESOURCE/editing.png" alt="edit" /></summary>
+                <input type="text" name="name" id="name" placeholder="edit your name" />
+                <button type="button" id="savename">Save</button>
             </details>
-            <details class="old">
-                <summary class="orderheader">Past Orders:</summary>
-                <div class="prevProduct">
-                    <details>
-                        <summary>Order Id : #034</summary>
-                        <div class="product">
-                            <span class="data">
-                                Molokhia   EGP 20.22</span>
-                            <span class="data">
-                                27/01/2023</span>
-                            <img src="RESOURCE/done.png" alt="status"/>
-                        </div>
-                    </details>
-                </div>
-                <div class="prevProduct">
-                    <details>
-                        <summary>Order Id : #045</summary>
-                        <div class="product">
-                            <span class="data">
-                                ObourLand  EGP 6.66</span>
-                            <span class="data">
-                                04/03/2023</span>
-                            <img src="RESOURCE/done.png" alt="status"/>
-                        </div>
-                    </details>
-                </div>
-                <div class="prevProduct">
-                    <details>
-                        <summary>Order Id : #056</summary>
-                        <div class="product">
-                            <span class="data">
-                                McFries   EGP 30.00</span>
-                            <span class="data">
-                                31/12/2022</span>
-                            <img src="RESOURCE/done.png" alt="status"/>
-                        </div>
-                    </details>
-                </div>
+        </div>
+        <div class="profile">
+            <label>Email :
+                <span id="clientEmail">Person@mail.com</span>
+            </label>
+            <details>
+                <summary><img src="RESOURCE/editing.png" alt="edit" /></summary>
+                <input type="email" name="email" id="email" placeholder="edit your email" />
+                <button type="button" id="saveemail">Save</button>
             </details>
-        </section>
-        <section class="paymentMethod">
-            <div class="method">
-                <label><img id="cashImg" src="RESOURCE/cash-payment.png" alt="cash"/>Cash
-                              on delivery
-                    <input type="radio" id="cash" name="method" checked/></label>
-            </div>
-            <div class="method">
-                <details id="online">
-                    <summary>
-                        <label>
-                            <img src="RESOURCE/credit-card.png" alt="card"/>
-                            MasterCard/Visa
-                            <input type="radio" id="card" name="method"/>
-                        </label>
-                        <img id="drop" src="RESOURCE/up-down.png" alt="details"/>
-                    </summary>
-                    <form class="credit-card">
-                        <div class="form-header">Credit card details</div>
-                        <input type="text" id="card-number" placeholder="Card Number" required/>
-                        <select name="Month" id="month" required>
-                            <option value="january">January</option>
-                            <option value="february">February</option>
-                            <option value="march">March</option>
-                            <option value="april">April</option>
-                            <option value="may">May</option>
-                            <option value="june">June</option>
-                            <option value="july">July</option>
-                            <option value="august">August</option>
-                            <option value="september">September</option>
-                            <option value="october">October</option>
-                            <option value="november">November</option>
-                            <option value="december">December</option>
-                        </select>
-                        <select name="Year" id="year" required>
-                            <option value="2023">2023</option>
-                            <option value="2024">2024</option>
-                            <option value="2025">2025</option>
-                            <option value="2026">2026</option>
-                            <option value="2027">2027</option>
-                            <option value="2028">2028</option>
-                            <option value="2029">2029</option>
-                            <option value="2030">2030</option>
-                            <option value="2031">2031</option>
-                        </select>
-                        <input type="text" placeholder="CVV" id="cvv" required/>
-                        <button type="submit" id="save">Save</button>
-                    </form>
+        </div>
+        <div class="profile">
+            <label>Password :
+                <span id="clientPassword">••••••••</span>
+            </label>
+            <details>
+                <summary><img src="RESOURCE/editing.png" alt="edit" /></summary>
+                <input type="password" id="password" name="password" placeholder="edit your password" />
+                <button type="button" id="savepassword">Save</button>
+            </details>
+        </div>
+        <div class="profile">
+            <label>Phone Number :
+                <span id="clientPhone">+01 234567890</span>
+            </label>
+            <details>
+                <summary><img src="RESOURCE/editing.png" alt="edit" /></summary>
+                <input type="tel" id="tel" name="tel" placeholder="edit your number" />
+                <button type="button" id="savetel">Save</button>
+            </details>
+        </div>
+        <div class="profile">
+            <label>Birth Date :
+                <span id="clientBirthdate">YYYY-MM-DD</span>
+            </label>
+            <details>
+                <summary><img src="RESOURCE/editing.png" alt="edit" /></summary>
+                <input type="date" name="bd" id="bd" max="2007-01-01" placeholder="edit your birthdate" />
+                <button type="button" id="savebd">Save</button>
+            </details>
+        </div>
+        <div class="profile">
+            <label>Country :
+                <span id="clientCountry">Country Name</span>
+            </label>
+            <details>
+                <summary><img src="RESOURCE/editing.png" alt="edit" /></summary>
+                <input type="text" name="country" id="country" placeholder="edit your country" />
+                <button type="button" id="savecountry">Save</button>
+            </details>
+        </div>
+        <div class="profile">
+            <label>Address :
+                <span id="clientAddress">012th street building 4</span>
+            </label>
+            <details>
+                <summary><img src="RESOURCE/editing.png" alt="edit" /></summary>
+                <input type="text" name="address" id="address" placeholder="edit your address" />
+                <button type="button" id="saveaddress">Save</button>
+            </details>
+        </div>
+    </section>
+    <section class="orders">
+        <details class="current">
+            <summary class="orderheader">Ongoing Orders:</summary>
+            <div class="currentOrder">
+                <details>
+                    <summary>Order Id : #123</summary>
+                    <div class="product">
+                        <span class="data">
+                            Kentucky Fried Chicken EGP 45.02
+                        </span>
+                        <span class="statusBar">
+                            <img src="RESOURCE/delivered.png" alt="status" />
+                            <img src="RESOURCE/shipping.png" alt="status" />
+                            <img src="RESOURCE/placed.png" alt="status" class="done" /></span>
+                    </div>
                 </details>
             </div>
-        </section>
-        <script type="text/javascript" src="JS/profilebar.js"></script>
-        <script type="text/javascript" href="JS/update.js"></script>
-    </body>
+            <div class="currentOrder">
+                <details>
+                    <summary>Order Id : #067</summary>
+                    <div class="product">
+                        <span class="data">
+                            Takis EGP 47.00
+                        </span>
+                        <span class="statusBar">
+                            <img src="RESOURCE/delivered.png" alt="status" />
+                            <img src="RESOURCE/shipping.png" alt="status" />
+                            <img src="RESOURCE/placed.png" alt="status" /></span>
+                    </div>
+                </details>
+            </div>
+            <div class="currentOrder">
+                <details>
+                    <summary>Order Id : #122</summary>
+                    <div class="product">
+                        <span class="data">
+                            Cinnabon EGP 36.00</span>
+                        <span class="statusBar">
+                            <img src="RESOURCE/delivered.png" alt="status" />
+                            <img src="RESOURCE/shipping.png" alt="status" class="done" />
+                            <img src="RESOURCE/placed.png" alt="status" class="done" /></span>
+                    </div>
+                </details>
+            </div>
+        </details>
+        <details class="old">
+            <summary class="orderheader">Past Orders:</summary>
+            <div class="prevProduct">
+                <details>
+                    <summary>Order Id : #034</summary>
+                    <div class="product">
+                        <span class="data">
+                            Molokhia EGP 20.22</span>
+                        <span class="data">
+                            27/01/2023</span>
+                        <img src="RESOURCE/done.png" alt="status" />
+                    </div>
+                </details>
+            </div>
+            <div class="prevProduct">
+                <details>
+                    <summary>Order Id : #045</summary>
+                    <div class="product">
+                        <span class="data">
+                            ObourLand EGP 6.66</span>
+                        <span class="data">
+                            04/03/2023</span>
+                        <img src="RESOURCE/done.png" alt="status" />
+                    </div>
+                </details>
+            </div>
+            <div class="prevProduct">
+                <details>
+                    <summary>Order Id : #056</summary>
+                    <div class="product">
+                        <span class="data">
+                            McFries EGP 30.00</span>
+                        <span class="data">
+                            31/12/2022</span>
+                        <img src="RESOURCE/done.png" alt="status" />
+                    </div>
+                </details>
+            </div>
+        </details>
+    </section>
+    <section class="paymentMethod">
+        <div class="method">
+            <label><img id="cashImg" src="RESOURCE/cash-payment.png" alt="cash" />Cash
+                on delivery
+                <input type="radio" id="cash" name="method" checked /></label>
+        </div>
+        <div class="method">
+            <details id="online">
+                <summary>
+                    <label>
+                        <img src="RESOURCE/credit-card.png" alt="card" />
+                        MasterCard/Visa
+                        <input type="radio" id="card" name="method" />
+                    </label>
+                    <img id="drop" src="RESOURCE/up-down.png" alt="details" />
+                </summary>
+                <form class="credit-card">
+                    <div class="form-header">Credit card details</div>
+                    <input type="text" id="card-number" placeholder="Card Number" required />
+                    <select name="Month" id="month" required>
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <option value="may">May</option>
+                        <option value="june">June</option>
+                        <option value="july">July</option>
+                        <option value="august">August</option>
+                        <option value="september">September</option>
+                        <option value="october">October</option>
+                        <option value="november">November</option>
+                        <option value="december">December</option>
+                    </select>
+                    <select name="Year" id="year" required>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                        <option value="2031">2031</option>
+                    </select>
+                    <input type="text" placeholder="CVV" id="cvv" required />
+                    <button type="submit" id="save">Save</button>
+                </form>
+            </details>
+        </div>
+    </section>
+    <script type="text/javascript" src="JS/profilebar.js"></script>
+    <script type="text/javascript" href="JS/update.js"></script>
+</body>
+
 </html>
