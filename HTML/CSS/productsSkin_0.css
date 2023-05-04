@@ -4,6 +4,16 @@
     box-sizing: border-box;
     font-family: 'Times New Roman';
   }
+
+  .top-sales.box.all {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .top-sales.box.all {
+    margin-right: 50px;
+  }
   
   img {
     width: 40px;
