@@ -10,10 +10,10 @@ img {
 }
 
 #logo {
-  width: 60%;
-  margin: 10%;
-  padding-top: 15%;
-  padding-bottom: 5%;
+  width: 75%;
+  margin: 13%;
+  padding-top: 30%;
+  padding-bottom: 15%;
 }
 
 .sidebar {
@@ -42,7 +42,7 @@ img {
 }
 
 .sidebar .nav-links {
-  margin-top: 10%;
+  margin-top: 15%;
   color: white;
   padding-left: 5%;
 }
