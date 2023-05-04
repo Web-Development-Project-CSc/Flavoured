@@ -1,7 +1,7 @@
 body {
+  background-color: #f9f1db;
   margin: 0%;
   padding: 0%;
-  background-color: #f9f1db;
 }
 
 a {
@@ -147,6 +147,7 @@ nav .search-box .bx-search {
 }
 
 nav .profile-details {
+  margin-right: 3%;
   display: flex;
   align-items: center;
   background: #F5F6FA;
