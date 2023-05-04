@@ -8,7 +8,8 @@ form {
     font-size: 30px;
     border-radius: 12px;
 }
-a{
+
+a {
     text-decoration: none;
     font-size: 20px;
     font-family: 'Times New Roman';
@@ -16,8 +17,9 @@ a{
     color: white;
     border-color: #f5f0e3;
     margin-top: 25px;
-border-radius: 20px;
+    border-radius: 20px;
 }
+
 button {
     width: 168px;
     font-size: 20px;
@@ -27,10 +29,11 @@ button {
     border-color: #f5f0e3;
     margin-top: 25px;
     border-radius: 20px;
-    
+
 }
+
 body {
-    background-color:  white;
+    background-color: white;
     color: white;
     font-family: 'Times New Roman';
 }
@@ -43,18 +46,20 @@ header {
 input {
     text-align: center;
     border-radius: 15px;
-} 
+}
+
 .flavoured {
     margin-left: 20px;
     text-align: center;
-} 
+}
+
 label {
     text-align: right;
-   
+
 }
+
 img {
     margin-left: 0%;
     width: 175px;
     margin-bottom: 0%;
 }
-
