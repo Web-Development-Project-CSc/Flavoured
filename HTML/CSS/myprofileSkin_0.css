@@ -2,6 +2,7 @@ html {
   max-width: 100%;
 }
 
+
 body {
   background-color: #f9f1db;
   font-family: 'Times New Roman';
@@ -28,7 +29,8 @@ header {
 .logo {
   width: 120px;
   display: inline-block;
-  margin-right: auto;
+  margin-right: -5%;
+  margin-left: auto;
 }
 
 nav {
@@ -60,7 +62,8 @@ nav * {
   padding-bottom: 15px;
 }
 
-nav *:hover {
+nav *:hover,
+.profileIcon:hover {
   background-color: #99B19C;
 }
 
@@ -84,6 +87,25 @@ section {
   text-align: left;
   margin-left: 25%;
   width: 65%
+}
+
+.profileIcon img {
+  width: 25%;
+  margin-left: 1%;
+  filter: invert();
+  transform: scaleX(-1);
+  vertical-align: middle;
+}
+
+.profileIcon {
+  float: right;
+  width: 7%;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 1.5%;
+  margin-right: 2%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
 }
 
 .profile summary {
