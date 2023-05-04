@@ -215,10 +215,22 @@ margin-left:5%;
 font-family: 'Times New Roman', Times, serif;
 float:right;
 }
+input{
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+  border-radius: 2px;
+  padding: 12px 36px;
+  color: #747474;
+  font-family: inherit;
+}
 .del{
   background-color:#A84448;
 }
-button:active{
+button:active, input:focus{
   box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.525);
   border-radius: 6px;
 }
@@ -239,3 +251,5 @@ ul{
   margin-top:1%;
   height:175px;
 }
+ul input{
+float:right  }
