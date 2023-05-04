@@ -91,7 +91,7 @@ nav {
   position: fixed;
   width: calc(100% - 240px);
   left: 240px;
-  z-index: 100;
+  z-index: 101;
   padding: 0 20px;
   box-shadow: 0 1px 1px #713c5f(0, 0, 0, 0.1);
 }
@@ -189,12 +189,13 @@ nav .profile-details .admin_name {
 
 .products li {
   border-radius: 6px;
-  padding: 3%;
+  padding:3%;
+  padding-bottom: 4%;
   padding-top: 1%;
   margin-bottom: 1%;
   margin-right: 3%;
   text-align: left;
-  vertical-align: text-bottom
+display: block;
 }
 
 li:hover {
@@ -216,8 +217,10 @@ button {
   font-family: 'Times New Roman', Times, serif;
   float: right;
 }
-
-button:active {
+.del{
+  background-color:#A84448;
+}
+button:active{
   box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.525);
   border-radius: 6px;
 }
@@ -235,4 +238,9 @@ ul {
 
 .products .title {
   color: rgb(196, 151, 40);
+}
+.products img{
+  width:17%;
+  margin-top:1%;
+  height:175px;
 }
