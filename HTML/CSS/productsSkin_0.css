@@ -176,3 +176,7 @@ nav .profile-details .admin_name {
   filter: invert();
   margin: 5%;
 }
+.products{
+  z-index: 60;
+font-size:500px
+}
