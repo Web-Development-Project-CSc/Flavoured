@@ -2,7 +2,10 @@ html {
   max-width: 100%;
 }
 
-
+a{
+  color: white;
+  text-decoration: none;
+}
 body {
   background-color: #f9f1db;
   font-family: 'Times New Roman';
@@ -29,7 +32,7 @@ header {
 .logo {
   width: 120px;
   display: inline-block;
-  margin-right: -6%;
+  margin-right: -9%;
   margin-left: auto;
 }
 
