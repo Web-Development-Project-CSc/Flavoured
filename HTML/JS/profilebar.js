@@ -3,6 +3,7 @@ let showers = document.getElementsByClassName("scroller");
 let inputs = document.querySelectorAll('.profile input');
 let savers = document.querySelectorAll('.profile button');
 let results = document.querySelectorAll('.profile span');
+let country = document.querySelector('.profile select');
 move(showers[0]);
 function move(tag){
     for(let i =0; i<showers.length; i++) showers[i].classList.remove("active");
@@ -62,7 +63,7 @@ savers[4].addEventListener('click', function (e){
 })
 savers[5].addEventListener('click', function (e){
   e.preventDefault();
-  results[5].innerHTML = inputs[5].value;
+  results[5].innerHTML = country.value;
 })
 savers[6].addEventListener('click', function (e){
   e.preventDefault();
