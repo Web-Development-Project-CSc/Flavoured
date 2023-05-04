@@ -117,7 +117,8 @@ li img {
 
 .search-box img {
   margin: 2%;
-  width: 20px
+  width: 20px;
+  cursor: pointer;
 }
 
 .button span {
