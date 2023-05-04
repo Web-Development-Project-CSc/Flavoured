@@ -20,6 +20,12 @@ img {
   width: 40px;
 }
 
+#adder {
+  float: left;
+  margin-bottom: 2%;
+  background-color: #713c5f;
+}
+
 .userData {
   background-color: white;
   border-radius: 15px;
@@ -87,7 +93,43 @@ th {
   font-family: 'Times New Roman', Times, serif;
   vertical-align: middle;
   text-align: center;
+}
 
+.addButton {
+  border: 0;
+  color: #ffffff;
+  background-color: #713c5f;
+  outline: 0;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+  border-radius: 6px;
+  padding: 12px 36px;
+  margin-left: 1%;
+  margin-right: 1.5%;
+  font-family: 'Times New Roman', Times, serif;
+  vertical-align: middle;
+  text-align: center;
+}
+
+input {
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+  border-radius: 2px;
+  padding: 12px 36px;
+  color: #747474;
+  font-family: inherit;
+  vertical-align: middle;
+  text-align: center;
+
+}
+
+.inputEmail{
+  margin-left: 1%;
 }
 
 span {
@@ -97,6 +139,7 @@ span {
 
 .modifyButton:active,
 .deleteButton:active,
+.addButton:active,
 button {
   box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.525);
   border-radius: 6px;
@@ -140,7 +183,8 @@ button {
 li {
   list-style: none;
 }
-li:hover{
+
+li:hover {
   box-shadow: 0px 3px 10px rgba(94, 94, 94, 0.841);
 }
 
