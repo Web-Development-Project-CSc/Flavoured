@@ -254,11 +254,13 @@ details[open] .productInfo {
 }
 
 .product details[open] .productInfo {
+  margin-left: 10.5%;
   z-index: 5;
   position: absolute;
   padding: 2%;
   width: 19.5%
 }
+
 .--hidden {
   opacity: 0;
   pointer-events: none;
