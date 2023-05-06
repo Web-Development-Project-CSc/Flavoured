@@ -249,6 +249,16 @@ details[open] .productInfo {
   padding-right: 10%;
 }
 
+.product:hover {
+  box-shadow: 0px 3px 10px rgba(69, 69, 69, 0.534);
+}
+
+.product details[open] .productInfo {
+  z-index: 5;
+  position: absolute;
+  padding: 2%;
+  width: 19.5%
+}
 .--hidden {
   opacity: 0;
   pointer-events: none;
@@ -305,10 +315,6 @@ input[type="radio"] {
 .contact img {
   width: 1.5em;
   margin-right: 0.6em;
-}
-
-.product:hover {
-  box-shadow: 0px 3px 10px rgba(69, 69, 69, 0.534);
 }
 
 #paymentCard {
@@ -390,13 +396,6 @@ input[type='button'] {
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
   border-radius: 2px;
   padding: 12px 36px;
-}
-
-.product details[open] .productInfo {
-  z-index: 5;
-  position: absolute;
-  padding: 2%;
-  width: 26%
 }
 
 .cart {
