@@ -219,13 +219,6 @@ nav a:hover {
   pointer-events: none;
 }
 
-.product details[open] .productInfo {
-  z-index: 5;
-  position: absolute;
-  padding: 2%;
-  width: 26%
-}
-
 .--visible {
   opacity: 1;
   pointer-events: all;
@@ -279,7 +272,7 @@ nav a:hover {
 }
 
 .product img {
-  margin-top: 4%;
+  margin-top: 5.75%;
   width: 90;
   display: block;
   margin-left: auto;
@@ -297,11 +290,19 @@ details[open] .productInfo {
   color: rgb(17, 17, 17);
   padding: 2px;
   margin: 1%;
-  width: 30%;
+  width: 24%;
   box-shadow: 1em 1em 1em rgba(0, 0, 0, .1);
   display: inline-table;
   border-radius: 10px;
   font-size: 2emu;
+}
+
+.product details[open] .productInfo {
+  margin-left: 10.5%;
+  z-index: 5;
+  position: absolute;
+  padding: 2%;
+  width: 19.5%
 }
 
 .product summary {
