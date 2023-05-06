@@ -186,6 +186,7 @@ text-align: center;
 margin-top: 6%;
 margin-left: 18%;
 width:80%;
+padding-bottom: 3.5%;
 }
 .products li{
   border-radius: 6px;
@@ -255,6 +256,10 @@ ul{
 ul input{
 float:right  
 }
-#edit input{
-  margin-left: 10%;
+#edit{
+  position: absolute;
+  z-index: 100;
+  width:100%;
+  margin-left:-50%;
+  margin-top:-0.4%
 }
