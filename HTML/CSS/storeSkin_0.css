@@ -200,7 +200,7 @@ footer {
 }
 
 .product img {
-  margin-top: 4%;
+  margin-top: 4.5%;
   width: 90%;
   display: block;
   margin-left: auto;
@@ -213,7 +213,7 @@ details[open] .productInfo {
   color: rgb(17, 17, 17);
   padding: 2px;
   margin: 1%;
-  width: 27%;
+  width: 24%;
   box-shadow: 1em 1em 1em rgba(0, 0, 0, .1);
   display: inline-table;
   border-radius: 10px;
