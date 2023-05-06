@@ -34,6 +34,7 @@ header {
   float: right;
   top:0;
   margin: 2%;
+  cursor: pointer;
 }.profileMenu {
   display: none;
   background-color:#f9f1db;

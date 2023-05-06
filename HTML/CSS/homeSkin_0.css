@@ -34,6 +34,7 @@ header {
     float: right;
     top:0;
     margin: 2%;
+  cursor: pointer;
 }
 .bigIcon img{
   opacity: 0.8;
